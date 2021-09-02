@@ -1,0 +1,7 @@
+|async_reset_D_FF
+clk => q_internal.CLK
+d => q_internal.DATAIN
+reset => q_internal.ACLR
+q <= q_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+

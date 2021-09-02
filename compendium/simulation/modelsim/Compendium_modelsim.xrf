@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/morgan/git/IL2203/compendium/async_reset_D_FF.vhd
+source_file = 1, /home/morgan/git/IL2203/compendium/sync_reset_D_FF.vhd
+source_file = 1, /home/morgan/git/IL2203/compendium/db/Compendium.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = async_reset_D_FF
+instance = comp, \clk~I\, clk, async_reset_D_FF, 1
+instance = comp, \d~I\, d, async_reset_D_FF, 1
+instance = comp, \q_internal~feeder\, q_internal~feeder, async_reset_D_FF, 1
+instance = comp, \reset~I\, reset, async_reset_D_FF, 1
+instance = comp, \q~I\, q, async_reset_D_FF, 1
