@@ -1,0 +1,8 @@
+|full_adder
+a => ~NO_FANOUT~
+b => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+cout <= <GND>
+sum <= <GND>
+
+

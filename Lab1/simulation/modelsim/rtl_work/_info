@@ -1,0 +1,112 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/morgan/git/IL2203/Lab1/simulation/modelsim
+Efull_adder
+Z1 w1630766665
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/morgan/git/IL2203/Lab1/simulation/modelsim
+Z5 8/home/morgan/git/IL2203/Lab1/full_adder.vhd
+Z6 F/home/morgan/git/IL2203/Lab1/full_adder.vhd
+l0
+L5
+VfTaWiPWj6?`fo;G6<JR0n2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1630766690.271942
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/full_adder.vhd|
+Z10 !s107 /home/morgan/git/IL2203/Lab1/full_adder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 dNg:SS0Vaj`QiSfz8hEiQ2
+!i10b 1
+Adataflow
+R2
+R3
+DEx4 work 10 full_adder 0 22 fTaWiPWj6?`fo;G6<JR0n2
+l12
+L10
+VBZDz]^d^Xi;UEUWE^VkVP1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 6W?1RnSAUgNJ__iQIh1EL1
+!i10b 1
+Eripple_carry_adder
+Z13 w1630765842
+R2
+R3
+R4
+Z14 8/home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd
+Z15 F/home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd
+l0
+L5
+VAETDm>ZooX1OnCklnSV;;0
+R7
+31
+Z16 !s108 1630766690.293567
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
+Z18 !s107 /home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
+R11
+R12
+!s100 dE:8VX:cj1;gNFHATc]mW1
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 18 ripple_carry_adder 0 22 AETDm>ZooX1OnCklnSV;;0
+l20
+L11
+V^azb1>UW@B_doKikG8j8z1
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 14caf`^h4V=U<mzSA2[k^3
+!i10b 1
+Etest_ripple_carry_adder
+Z19 w1630766594
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z21 8/home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd
+Z22 F/home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd
+l0
+L6
+VDLPfZbBoI]JJKlmfiSJXK0
+!s100 PQSmS`ho0`>X]ETS=bC3W1
+R7
+31
+!i10b 1
+Z23 !s108 1630766690.333210
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
+Z25 !s107 /home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
+R11
+R12
+Atest
+R20
+R2
+R3
+Z26 DEx4 work 23 test_ripple_carry_adder 0 22 DLPfZbBoI]JJKlmfiSJXK0
+l24
+L10
+Z27 Vc;7z7X^PSaI]aGlJeW1FX2
+Z28 !s100 XVXzIn3;zS6AknPBkTUUe0
+R7
+31
+!i10b 1
+R23
+R24
+R25
+R11
+R12

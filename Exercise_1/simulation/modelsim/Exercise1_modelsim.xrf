@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/morgan/git/IL2203/Exercise_1/full_adder.vhd
+source_file = 1, /home/morgan/git/IL2203/Exercise_1/test.vhd
+source_file = 1, /home/morgan/git/IL2203/Exercise_1/test_full_adder.vhd
+source_file = 1, /home/morgan/git/IL2203/Exercise_1/db/Exercise1.cbx.xml
+source_file = 1, /home/morgan/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/morgan/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/morgan/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/morgan/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = full_adder
+instance = comp, \a~I\, a, full_adder, 1
+instance = comp, \b~I\, b, full_adder, 1
+instance = comp, \cin~I\, cin, full_adder, 1
+instance = comp, \cout~I\, cout, full_adder, 1
+instance = comp, \sum~I\, sum, full_adder, 1

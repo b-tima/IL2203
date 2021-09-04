@@ -1,0 +1,56 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/morgan/git/IL2203/Exercise_1/simulation/modelsim
+Efull_adder
+Z1 w1630663272
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/morgan/git/IL2203/Exercise_1/simulation/modelsim
+Z5 8/home/morgan/git/IL2203/Exercise_1/full_adder.vhd
+Z6 F/home/morgan/git/IL2203/Exercise_1/full_adder.vhd
+l0
+L4
+VbRfeMgHdFLC?l50z7k?<T0
+!s100 d@8:ed5UU9P@QbH?Fi7b<0
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1630668569.019812
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Exercise_1/full_adder.vhd|
+Z10 !s107 /home/morgan/git/IL2203/Exercise_1/full_adder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Astructure
+R2
+R3
+Z13 DEx4 work 10 full_adder 0 22 bRfeMgHdFLC?l50z7k?<T0
+l39
+L16
+VfmO@1dF?de`B53^[iL=c52
+!s100 OCzh8F1g7bIz=6Zm?`Wa@0
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Abehave
+R2
+R3
+R13
+l11
+L9
+V_ZL5`m[jPg`SiFlXSMlkZ3
+!s100 _?1fiOgzdEGiXkZe6hTI51
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

@@ -1,0 +1,10 @@
+Entity full_adder is
+port(	a,b,cin:IN std_logic;
+		cout,sum:OUT std_logic);
+end full_adder;
+
+architecture beh of full_adder is
+
+begin
+
+end
