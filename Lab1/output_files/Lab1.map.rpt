@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1
-Sat Sep  4 16:44:30 2021
+Mon Sep  6 16:52:12 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep  4 16:44:30 2021           ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep  6 16:52:12 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab1                                            ;
-; Top-level Entity Name              ; full_adder                                      ;
+; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2                                               ;
-;     Total combinational functions  ; 2                                               ;
+; Total logic elements               ; 49                                              ;
+;     Total combinational functions  ; 49                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 5                                               ;
+; Total pins                         ; 27                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +65,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; full_adder         ; Lab1               ;
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; ALU                ; Lab1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Type of Retiming Performed During Resynthesis                              ; Full               ;                    ;
 ; Resynthesis Optimization Effort                                            ; Normal             ;                    ;
@@ -165,6 +168,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; full_adder.vhd                   ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab1/full_adder.vhd              ;         ;
 ; ripple_carry_adder.vhd           ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd      ;         ;
 ; test_ripple_carry_adder.vhd      ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab1/ALU.vhd                     ;         ;
+; test_ALU.vhd                     ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab1/test_ALU.vhd                ;         ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
@@ -173,28 +178,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2     ;
+; Estimated Total logic elements              ; 49    ;
 ;                                             ;       ;
-; Total combinational functions               ; 2     ;
+; Total combinational functions               ; 49    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 16    ;
+;     -- <=2 input functions                  ; 10    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2     ;
-;     -- arithmetic mode                      ; 0     ;
+;     -- normal mode                          ; 42    ;
+;     -- arithmetic mode                      ; 7     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 5     ;
+; I/O pins                                    ; 27    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; a     ;
-; Maximum fan-out                             ; 2     ;
-; Total fan-out                               ; 8     ;
-; Average fan-out                             ; 1.14  ;
+; Maximum fan-out node                        ; OP[0] ;
+; Maximum fan-out                             ; 17    ;
+; Total fan-out                               ; 170   ;
+; Average fan-out                             ; 2.24  ;
 +---------------------------------------------+-------+
 
 
@@ -203,7 +208,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |full_adder                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |full_adder         ; work         ;
+; |ALU                       ; 49 (49)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |ALU                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -223,6 +228,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; No         ; |ALU|Mux6                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 7     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -238,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Sep  4 16:44:29 2021
+    Info: Processing started: Mon Sep  6 16:52:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
@@ -250,16 +274,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file ripple_
 Info (12021): Found 2 design units, including 1 entities, in source file test_ripple_carry_adder.vhd
     Info (12022): Found design unit 1: test_ripple_carry_adder-test
     Info (12023): Found entity 1: test_ripple_carry_adder
-Info (12127): Elaborating entity "full_adder" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
+    Info (12022): Found design unit 1: ALU-behave
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file test_ALU.vhd
+    Info (12022): Found design unit 1: test_ALU-test
+    Info (12023): Found entity 1: test_ALU
+Info (12021): Found 0 design units, including 0 entities, in source file Top.vhd
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 2 logic cells
+Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 49 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 608 megabytes
-    Info: Processing ended: Sat Sep  4 16:44:30 2021
+    Info: Peak virtual memory: 618 megabytes
+    Info: Processing ended: Mon Sep  6 16:52:12 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
