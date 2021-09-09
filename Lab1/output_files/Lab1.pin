@@ -533,7 +533,7 @@ GND*                         : M24       :        :                   :         
 GND*                         : M25       :        :                   :         : 5         :                
 GND                          : M26       : gnd    :                   :         :           :                
 B[3]                         : N1        : input  : 3.3-V LVTTL       :         : 2         : Y              
-GND+                         : N2        :        :                   :         : 2         :                
+CLK                          : N2        : input  : 3.3-V LVTTL       :         : 2         : N              
 DATA0                        : N3        : input  :                   :         : 2         :                
 nCE                          : N4        :        :                   :         : 2         :                
 VCCIO2                       : N5        : power  :                   : 3.3V    : 2         :                
