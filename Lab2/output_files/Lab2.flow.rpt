@@ -1,5 +1,5 @@
 Flow report for Lab2
-Thu Sep  9 17:24:59 2021
+Fri Sep 10 14:24:45 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep  9 17:24:59 2021           ;
+; Flow Status                        ; Successful - Fri Sep 10 14:24:45 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab2                                            ;
 ; Top-level Entity Name              ; Datapath                                        ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 5,516 / 21,280 ( 26 % )                         ;
-;     Total combinational functions  ; 3,785 / 21,280 ( 18 % )                         ;
-;     Dedicated logic registers      ; 2,593 / 21,280 ( 12 % )                         ;
-; Total registers                    ; 2593                                            ;
-; Total pins                         ; 57 / 167 ( 34 % )                               ;
+; Total logic elements               ; 230 / 21,280 ( 1 % )                            ;
+;     Total combinational functions  ; 193 / 21,280 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 90 / 21,280 ( < 1 % )                           ;
+; Total registers                    ; 90                                              ;
+; Total pins                         ; 62 / 167 ( 37 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 774,144 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                                  ;
@@ -68,26 +68,32 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/09/2021 17:23:18 ;
+; Start date & time ; 09/10/2021 14:24:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2                ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                            ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.163120099821419      ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057               ; --            ; Datapath    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; Datapath    ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; Datapath    ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Datapath               ; Lab2          ; --          ; --             ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                             ;
++--------------------------------------+------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 0.163127666339072      ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                     ; --            ; --          ; tb_alu         ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_alu                 ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                   ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; test_ALU.vhd           ; --            ; --          ; tb_alu         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_alu                 ; --            ; --          ; tb_alu         ;
+; EDA_TEST_BENCH_NAME                  ; tb_alu                 ; --            ; --          ; eda_simulation ;
+; PARTITION_COLOR                      ; 16764057               ; --            ; Datapath    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING  ; --            ; Datapath    ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                 ; --            ; Datapath    ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; Datapath               ; Lab2          ; --          ; --             ;
++--------------------------------------+------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +101,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 665 MB              ; 00:00:10                           ;
-; Fitter                    ; 00:01:10     ; 1.0                     ; 911 MB              ; 00:01:11                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 616 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 621 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 897 MB              ; 00:00:05                           ;
-; Total                     ; 00:01:33     ; --                      ; --                  ; 00:01:33                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 645 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 845 MB              ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 582 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 569 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 833 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

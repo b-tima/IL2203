@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 use work.all;
 
 entity Datapath is
-generic(	M : integer := 8;
+generic(	M : integer := 3;
 			N : integer := 10
 );
 port(
@@ -29,6 +29,7 @@ port(
 	OE : IN std_logic;
 	
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
+	qa, qb : out std_logic_vector(N-1 downto 0);
 	
 	Z_Flag : OUT std_logic;
 	N_Flag : OUT std_logic;
@@ -79,24 +80,31 @@ end component;
 signal sum : std_logic_vector(N-1 downto 0);
 signal rf_input, alu_a, alu_b : std_logic_vector(N-1 downto 0);
 
+signal alu_en : std_logic;
+
 begin
 
-rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET, 
-																			CLK => CLK, 
-																			WD => rf_input, 
-																			WAddr => WAddr, 
-																			Write => Write, 
-																			RA => RA, 
+alu_en <= OE or (not IE);
+
+qa <= alu_a;
+qb <= alu_b;
+
+rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
+																			CLK => CLK,
+																			WD => rf_input,
+																			WAddr => WAddr,
+																			Write => Write,
+																			RA => RA,
 																			ReadA => ReadA,
 																			RB => RB,
-																			ReadB => ReadB, 
-																			QA => alu_a, 
+																			ReadB => ReadB,
+																			QA => alu_a,
 																			QB => alu_b);
 																			
 																			
 sweden_is_great : ALU generic map(N => N) port map(	RESET => RESET,
 														CLK => CLK,
-														EN => OE,
+														EN => alu_en,
 														OP => OP,
 														A => alu_a,
 														B => alu_b,

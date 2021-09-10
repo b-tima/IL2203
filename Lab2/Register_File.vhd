@@ -34,9 +34,14 @@ signal qb_tmp : std_logic_vector(N-1 downto 0);
 
 begin
 
-QA <= qa_tmp;
-QB <= qb_tmp;
+with ReadA select QA <=
+	register_arr(to_integer(unsigned(RA))) when '1',
+	(others => '0') when others;
 
+with ReadB select QB <=
+	register_arr(to_integer(unsigned(RB))) when '1',
+	(others => '0') when others;
+	
 process(CLK)
 begin
 	if rising_edge(CLK) then
@@ -46,13 +51,6 @@ begin
 			end loop;
 		elsif(Write = '1') then
 			register_arr(to_integer(unsigned(WAddr))) <= WD;
-		end if;
-		
-		if(ReadA = '1') then
-			qa_tmp <= register_arr(to_integer(unsigned(RA)));
-		end if;
-		if(ReadB = '1') then
-			qb_tmp <= register_arr(to_integer(unsigned(RB)));
 		end if;
 	end if;
 end process;
