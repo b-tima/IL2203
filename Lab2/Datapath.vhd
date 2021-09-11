@@ -29,9 +29,6 @@ port(
 	OE : IN std_logic;
 	
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
-	qa, qb : out std_logic_vector(N-1 downto 0);
-	
-	fingal: out std_logic_vector(N-1 downto 0);
 	
 	Z_Flag : OUT std_logic;
 	N_Flag : OUT std_logic;
@@ -56,8 +53,6 @@ port(
 	
 	RB : IN std_logic_vector(M-1 downto 0);
 	ReadB : IN std_logic;
-	
-	fingal: out std_logic_vector(N-1 downto 0);
 	
 	QA : OUT std_logic_vector(N-1 downto 0);
 	QB : OUT std_logic_vector(N-1 downto 0)
@@ -90,9 +85,6 @@ begin
 
 alu_en <= OE or (not IE);
 
-qa <= alu_a;
-qb <= alu_b;
-
 rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
 																			CLK => CLK,
 																			WD => rf_input,
@@ -103,8 +95,7 @@ rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
 																			RB => RB,
 																			ReadB => ReadB,
 																			QA => alu_a,
-																			QB => alu_b,
-																			fingal => fingal);
+																			QB => alu_b);
 																			
 																			
 sweden_is_great : ALU generic map(N => N) port map(	RESET => RESET,
@@ -118,24 +109,12 @@ sweden_is_great : ALU generic map(N => N) port map(	RESET => RESET,
 																		N_Flag => N_Flag,
 																		O_Flag => O_Flag);
 
-process(IE)
-
-begin
-	if(IE = '1') then
-		rf_input <= INPUT;
-	else
-		rf_input <= sum;
-	end if;
-end process;
-
-process(OE)
-
-begin
-	if(OE = '1') then
-		OUTPUT <= sum;
-	else
-		OUTPUT <= (others => 'Z');
-	end if;
-end process;
+with IE select rf_input <=
+		INPUT when '1',
+		sum when others;
+		
+with OE select OUTPUT <=
+		sum when '1',
+		(others => 'Z') when others;
 
 end bitch;

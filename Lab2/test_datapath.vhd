@@ -32,10 +32,8 @@ port(
 	ReadB : IN std_logic;
 	
 	OE : IN std_logic;
-	fingal: out std_logic_vector(N-1 downto 0);
 	
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
-	qa, qb : OUT std_logic_vector(N-1 downto 0);
 	Z_Flag : OUT std_logic;
 	N_Flag : OUT std_logic;
 	O_Flag : OUT std_logic
@@ -68,9 +66,6 @@ signal Z_Flag : std_logic;
 signal N_Flag : std_logic;
 signal O_Flag : std_logic;
 
-signal qa, qb : std_logic_vector(4 downto 0);
-signal fingal: std_logic_vector(4 downto 0);
-
 begin
 
 DUT : Datapath generic map(N => 5, M => 3) port map(	RESET => RESET,
@@ -88,9 +83,7 @@ DUT : Datapath generic map(N => 5, M => 3) port map(	RESET => RESET,
 																		OUTPUT => OUTPUT,
 																		Z_Flag => Z_Flag,
 																		N_Flag => N_Flag,
-																		O_Flag => O_Flag,
-																		fingal => fingal,
-																		qa => qa, qb => qb);
+																		O_Flag => O_Flag);
 
 signal_generator : process
 begin
@@ -125,8 +118,9 @@ begin
 	for i in 0 to 2**5-1 loop
 		--INPUT <= "00001";
 		wait until rising_edge(clk);
+		wait until rising_edge(clk);
 		wait for 100 ps;
-		assert OUTPUT=std_logic_vector(to_unsigned(i, 5)) report "sum is incorrect" severity error;
+		assert OUTPUT=std_logic_vector(to_unsigned(i+1, 5)) report "sum is incorrect" severity error;
 		wait until falling_edge(clk);
 	end loop;
 	
