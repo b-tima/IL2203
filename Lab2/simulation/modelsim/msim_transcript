@@ -1,0 +1,169 @@
+# do Lab2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /home/morgan/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/morgan/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture behave of ALU
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/Register_File.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Register_File
+# -- Compiling architecture fuckyou of Register_File
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/Datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Datapath
+# -- Compiling architecture bitch of Datapath
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/test_ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity test_ALU
+# -- Compiling architecture test of test_ALU
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/test_rf.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity test
+# -- Compiling architecture tset_tse_tes_s of test
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/test_datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity test_datapath
+# -- Compiling architecture test of test_datapath
+# 
+# vcom -93 -work work {/home/morgan/git/IL2203/Lab2/test_ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity test_ALU
+# -- Compiling architecture test of test_ALU
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  tb_alu
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_alu 
+# ** Error: (vsim-3170) Could not find '/home/morgan/git/IL2203/Lab2/simulation/modelsim/rtl_work.tb_alu'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Lab2_run_msim_rtl_vhdl.do PAUSED at line 17
+vsim work.test_datapath
+# vsim work.test_datapath 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.test_datapath(test)
+# Loading work.datapath(bitch)
+# Loading work.register_file(fuckyou)
+# Loading work.alu(behave)
+add wave -position insertpoint  \
+sim:/test_datapath/RESET \
+sim:/test_datapath/CLK \
+sim:/test_datapath/OP \
+sim:/test_datapath/IE \
+sim:/test_datapath/INPUT \
+sim:/test_datapath/WAddr \
+sim:/test_datapath/Write \
+sim:/test_datapath/RA \
+sim:/test_datapath/ReadA \
+sim:/test_datapath/RB \
+sim:/test_datapath/ReadB \
+sim:/test_datapath/OE \
+sim:/test_datapath/OUTPUT \
+sim:/test_datapath/Z_Flag \
+sim:/test_datapath/N_Flag \
+sim:/test_datapath/O_Flag \
+sim:/test_datapath/qa \
+sim:/test_datapath/qb \
+sim:/test_datapath/fingal
+run
+# ** Error: sum is incorrect
+#    Time: 9100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 11100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 13100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 15100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 17100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 19100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 21100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 23100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 25100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 27100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 29100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 31100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 33100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 35100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 37100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 39100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 41100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 43100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 45100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 47100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 49100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 51100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 53100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 55100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 57100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 59100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 61100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 63100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 65100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 67100 ps  Iteration: 0  Instance: /test_datapath
+# ** Error: sum is incorrect
+#    Time: 69100 ps  Iteration: 0  Instance: /test_datapath
