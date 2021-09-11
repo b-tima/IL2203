@@ -19,6 +19,8 @@ port(
 	RB : IN std_logic_vector(M-1 downto 0);
 	ReadB : IN std_logic;
 	
+	fingal: out std_logic_vector(N-1 downto 0);
+	
 	QA : OUT std_logic_vector(N-1 downto 0);
 	QB : OUT std_logic_vector(N-1 downto 0)
 );
@@ -42,6 +44,8 @@ with ReadB select QB <=
 	register_arr(to_integer(unsigned(RB))) when '1',
 	(others => '0') when others;
 	
+fingal<= register_arr(6);
+
 process(CLK)
 begin
 	if rising_edge(CLK) then

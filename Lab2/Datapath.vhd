@@ -31,6 +31,8 @@ port(
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
 	qa, qb : out std_logic_vector(N-1 downto 0);
 	
+	fingal: out std_logic_vector(N-1 downto 0);
+	
 	Z_Flag : OUT std_logic;
 	N_Flag : OUT std_logic;
 	O_Flag : OUT std_logic
@@ -54,6 +56,8 @@ port(
 	
 	RB : IN std_logic_vector(M-1 downto 0);
 	ReadB : IN std_logic;
+	
+	fingal: out std_logic_vector(N-1 downto 0);
 	
 	QA : OUT std_logic_vector(N-1 downto 0);
 	QB : OUT std_logic_vector(N-1 downto 0)
@@ -99,19 +103,20 @@ rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
 																			RB => RB,
 																			ReadB => ReadB,
 																			QA => alu_a,
-																			QB => alu_b);
+																			QB => alu_b,
+																			fingal => fingal);
 																			
 																			
 sweden_is_great : ALU generic map(N => N) port map(	RESET => RESET,
-														CLK => CLK,
-														EN => alu_en,
-														OP => OP,
-														A => alu_a,
-														B => alu_b,
-														SUM => sum,
-														Z_Flag => Z_Flag,
-														N_Flag => N_Flag,
-														O_Flag => O_Flag);
+																		CLK => CLK,
+																		EN => alu_en,
+																		OP => OP,
+																		A => alu_a,
+																		B => alu_b,
+																		SUM => sum,
+																		Z_Flag => Z_Flag,
+																		N_Flag => N_Flag,
+																		O_Flag => O_Flag);
 
 process(IE)
 
