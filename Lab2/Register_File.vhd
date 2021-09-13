@@ -24,7 +24,7 @@ port(
 );
 end Register_File;
 
-architecture fuckyou of Register_File is
+architecture rf of Register_File is
 
 type reg is array (2**M - 1 downto 0) of std_logic_vector(N-1 downto 0);
 signal register_arr : reg;
@@ -55,4 +55,4 @@ begin
 	end if;
 end process;
 
-end fuckyou;
+end rf;

@@ -157,6 +157,20 @@ begin
 	assert o = '0' report "o != 0" severity error;
 	wait for 1 ns;
 	
+	op <= "001";
+	a <= "01111";
+	b <= "10000";
+	wait for 1 ns;
+	assert o = '1' report "o != 1" severity error;
+	wait for 1 ns;
+	
+	op <= "001";
+	a <= "10000";
+	b <= "01111";
+	wait for 1 ns;
+	assert o = '1' report "o != 1" severity error;
+	wait for 1 ns;
+	
 	wait for 100000000 ns;
 	
 end process;

@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 use work.all;
 
 entity Datapath is
-generic(	M : integer := 3;
-			N : integer := 10
+generic(	M : integer := 2;
+			N : integer := 4
 );
 port(
 	RESET : IN std_logic;
@@ -28,6 +28,8 @@ port(
 	
 	OE : IN std_logic;
 	
+	CLK1HZ_po : out std_logic;
+	
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
 	
 	Z_Flag : OUT std_logic;
@@ -36,7 +38,7 @@ port(
 );
 end Datapath;
 
-architecture bitch of Datapath is
+architecture dp of Datapath is
 
 component Register_File is
 generic(N, M:integer);
@@ -76,17 +78,26 @@ port(
 );
 end component;
 
+component Clock_Divider is
+port(
+	CLK100MHZ : in std_logic;
+	CLK1HZ : out std_logic
+);
+end component;
+
 signal sum : std_logic_vector(N-1 downto 0);
 signal rf_input, alu_a, alu_b : std_logic_vector(N-1 downto 0);
 
 signal alu_en : std_logic;
+signal clk1hz : std_logic;
 
 begin
 
+CLK1HZ_po <= clk1hz;
 alu_en <= OE or (not IE);
 
-rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
-																			CLK => CLK,
+rf : Register_File generic map(N => N, M => M) port map(	RESET => not RESET,
+																			CLK => clk1hz,
 																			WD => rf_input,
 																			WAddr => WAddr,
 																			Write => Write,
@@ -98,17 +109,19 @@ rf : Register_File generic map(N => N, M => M) port map(	RESET => RESET,
 																			QB => alu_b);
 																			
 																			
-sweden_is_great : ALU generic map(N => N) port map(	RESET => RESET,
-																		CLK => CLK,
-																		EN => alu_en,
-																		OP => OP,
-																		A => alu_a,
-																		B => alu_b,
-																		SUM => sum,
-																		Z_Flag => Z_Flag,
-																		N_Flag => N_Flag,
-																		O_Flag => O_Flag);
+the_best_alu_in_kista : ALU generic map(N => N) port map(	RESET => not RESET,
+																				CLK => clk1hz,
+																				EN => alu_en,
+																				OP => OP,
+																				A => alu_a,
+																				B => alu_b,
+																				SUM => sum,
+																				Z_Flag => Z_Flag,
+																				N_Flag => N_Flag,
+																				O_Flag => O_Flag);
 
+cd : Clock_Divider port map(CLK100MHZ => CLK, CLK1HZ => clk1hz);
+																		
 with IE select rf_input <=
 		INPUT when '1',
 		sum when others;
@@ -117,4 +130,4 @@ with OE select OUTPUT <=
 		sum when '1',
 		(others => 'Z') when others;
 
-end bitch;
+end dp;

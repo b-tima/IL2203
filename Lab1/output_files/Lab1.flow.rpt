@@ -1,5 +1,5 @@
 Flow report for Lab1
-Thu Sep  9 15:18:32 2021
+Mon Sep 13 11:21:12 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep  9 15:18:32 2021           ;
+; Flow Status                        ; Successful - Mon Sep 13 11:21:12 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab1                                            ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 50 / 33,216 ( < 1 % )                           ;
-;     Total combinational functions  ; 49 / 33,216 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 10 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 10                                              ;
-; Total pins                         ; 28 / 475 ( 6 % )                                ;
+; Total logic elements               ; 52 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 52 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 27 / 475 ( 6 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/09/2021 15:18:15 ;
+; Start date & time ; 09/13/2021 11:20:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab1                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+-----------------------------+---------------+-------------+-------------------------+
 ; Assignment Name                      ; Value                       ; Default Value ; Entity Name ; Section Id              ;
 +--------------------------------------+-----------------------------+---------------+-------------+-------------------------+
-; COMPILER_SIGNATURE_ID                ; 0.163119349515572           ; --            ; --          ; --                      ;
+; COMPILER_SIGNATURE_ID                ; 0.163152485726399           ; --            ; --          ; --                      ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Design Compiler             ; <None>        ; --          ; --                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                          ; --            ; --          ; test_ripple_carry_adder ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                          ; --            ; --          ; test_alu                ;
@@ -108,11 +108,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 587 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 709 MB              ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 545 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 491 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 777 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:09                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 711 MB              ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 549 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 777 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 d/home/morgan/git/IL2203/Lab1/simulation/modelsim
 Ealu
-Z1 w1630919780
+Z1 w1631524738
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -13,24 +13,24 @@ Z6 8/home/morgan/git/IL2203/Lab1/ALU.vhd
 Z7 F/home/morgan/git/IL2203/Lab1/ALU.vhd
 l0
 L6
-V0=@YJc8E=h?eSNFX@;iX61
+VR:G2Z9i4LS=SFYPfSI[oj2
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1630922001.118930
+Z9 !s108 1631524768.122774
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/ALU.vhd|
 Z11 !s107 /home/morgan/git/IL2203/Lab1/ALU.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
-!s100 0AoV1:bK]SB>9A`5LkEz_1
+!s100 8:DMJYUh;[dbb:WEB^GPI1
 !i10b 1
 Abehave
 R2
 R3
 R4
-DEx4 work 3 alu 0 22 0=@YJc8E=h?eSNFX@;iX61
-l25
+DEx4 work 3 alu 0 22 R:G2Z9i4LS=SFYPfSI[oj2
+l26
 L19
-VJoBFWNP<TIBmN1GQM3U:43
+VEB7VEoBhR94h[?YAjifPT3
 R8
 31
 R9
@@ -38,7 +38,7 @@ R10
 R11
 R12
 R13
-!s100 ?Y_=DAWbMFI<jY^A4dRNU0
+!s100 1FL5W4BlR@^I[RdWP9>O13
 !i10b 1
 Efull_adder
 Z14 w1630860866
@@ -52,7 +52,7 @@ L5
 VfTaWiPWj6?`fo;G6<JR0n2
 R8
 31
-Z17 !s108 1630922001.015407
+Z17 !s108 1631524768.019511
 Z18 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/full_adder.vhd|
 Z19 !s107 /home/morgan/git/IL2203/Lab1/full_adder.vhd|
 R12
@@ -87,7 +87,7 @@ L5
 VAETDm>ZooX1OnCklnSV;;0
 R8
 31
-Z22 !s108 1630922001.049868
+Z22 !s108 1631524768.048597
 Z23 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
 Z24 !s107 /home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
 R12
@@ -111,7 +111,7 @@ R13
 !s100 14caf`^h4V=U<mzSA2[k^3
 !i10b 1
 Etest_alu
-Z25 w1630921939
+Z25 w1631524552
 R2
 R3
 R4
@@ -125,7 +125,7 @@ V]OBbd>fh^L^jThE1M?L9L1
 R8
 31
 !i10b 1
-Z28 !s108 1630922001.193245
+Z28 !s108 1631524768.203045
 Z29 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/test_ALU.vhd|
 Z30 !s107 /home/morgan/git/IL2203/Lab1/test_ALU.vhd|
 R12
@@ -137,8 +137,8 @@ R4
 Z31 DEx4 work 8 test_alu 0 22 ]OBbd>fh^L^jThE1M?L9L1
 l30
 L10
-Z32 VEa:SlITL<=XWfePF`E:HH1
-Z33 !s100 S8DLi2aTIae0S0AaEi:fe2
+Z32 VL2<[IkG7N0<4>d8U:A35V3
+Z33 !s100 P4XWc=_2CQoDKc:oahzlW0
 R8
 31
 !i10b 1
@@ -160,7 +160,7 @@ L6
 V6MnNYBPoMO>TY`kXg@aBG3
 R8
 31
-Z37 !s108 1630922001.081532
+Z37 !s108 1631524768.082007
 Z38 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
 Z39 !s107 /home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
 R12

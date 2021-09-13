@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2
-Sat Sep 11 14:54:57 2021
+Mon Sep 13 10:17:55 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,7 +17,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Parameter Settings for User Entity Instance: Top-level Entity: |Datapath
  11. Parameter Settings for User Entity Instance: Register_File:rf
- 12. Parameter Settings for User Entity Instance: ALU:sweden_is_great
+ 12. Parameter Settings for User Entity Instance: ALU:the_best_alu_in_kista
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
 
@@ -45,23 +45,19 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 11 14:54:57 2021           ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 13 10:17:55 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab2                                            ;
 ; Top-level Entity Name              ; Datapath                                        ;
-; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 264                                             ;
-;     Total combinational functions  ; 194                                             ;
-;     Dedicated logic registers      ; 90                                              ;
-; Total registers                    ; 90                                              ;
-; Total pins                         ; 42                                              ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 125                                             ;
+;     Total combinational functions  ; 112                                             ;
+;     Dedicated logic registers      ; 49                                              ;
+; Total registers                    ; 49                                              ;
+; Total pins                         ; 28                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total GXB Receiver Channel PCS     ; 0                                               ;
-; Total GXB Receiver Channel PMA     ; 0                                               ;
-; Total GXB Transmitter Channel PCS  ; 0                                               ;
-; Total GXB Transmitter Channel PMA  ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
@@ -71,8 +67,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
 ; Top-level entity name                                                      ; Datapath           ; Lab2               ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -111,14 +108,12 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -126,7 +121,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
@@ -158,7 +153,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 24     ;
+; Number detected on machine ; 16     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -174,32 +169,50 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; test_ALU.vhd                     ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab2/test_ALU.vhd      ;         ;
 ; test_rf.vhd                      ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab2/test_rf.vhd       ;         ;
 ; test_datapath.vhd                ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab2/test_datapath.vhd ;         ;
+; Clock_Divider.vhd                ; yes             ; User VHDL File  ; /home/morgan/git/IL2203/Lab2/Clock_Divider.vhd ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
 
 
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 42               ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; CLK~input        ;
-; Maximum fan-out          ; 90               ;
-; Total fan-out            ; 1067             ;
-; Average fan-out          ; 2.90             ;
-+--------------------------+------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 125   ;
+;                                             ;       ;
+; Total combinational functions               ; 112   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 51    ;
+;     -- 3 input functions                    ; 10    ;
+;     -- <=2 input functions                  ; 51    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 84    ;
+;     -- arithmetic mode                      ; 28    ;
+;                                             ;       ;
+; Total registers                             ; 49    ;
+;     -- Dedicated logic registers            ; 49    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 28    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 26    ;
+; Total fan-out                               ; 472   ;
+; Average fan-out                             ; 2.50  ;
++---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
-; |Datapath                  ; 194 (0)           ; 90 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 42   ; 0            ; |Datapath                     ; work         ;
-;    |ALU:sweden_is_great|   ; 74 (74)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Datapath|ALU:sweden_is_great ; work         ;
-;    |Register_File:rf|      ; 120 (120)         ; 80 (80)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Datapath|Register_File:rf    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
+; |Datapath                      ; 112 (1)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |Datapath                           ; work         ;
+;    |ALU:the_best_alu_in_kista| ; 32 (32)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Datapath|ALU:the_best_alu_in_kista ; work         ;
+;    |Clock_Divider:cd|          ; 47 (47)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Datapath|Clock_Divider:cd          ; work         ;
+;    |Register_File:rf|          ; 32 (32)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Datapath|Register_File:rf          ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -208,12 +221,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 90    ;
-; Number of registers using Synchronous Clear  ; 10    ;
+; Total registers                              ; 49    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 80    ;
+; Number of registers using Clock Enable       ; 23    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -223,17 +236,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[7][4] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[6][1] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[5][6] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[4][6] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[3][6] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[2][3] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[1][9] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Datapath|Register_File:rf|register_arr[0][1] ;
-; 10:1               ; 10 bits   ; 60 LEs        ; 50 LEs               ; 10 LEs                 ; Yes        ; |Datapath|ALU:sweden_is_great|sum_rtl[9]      ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Datapath|Register_File:rf|QA[8]              ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Datapath|Register_File:rf|QB[9]              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Datapath|Register_File:rf|register_arr[3][1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Datapath|Register_File:rf|register_arr[2][1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Datapath|Register_File:rf|register_arr[1][1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Datapath|Register_File:rf|register_arr[0][0] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |Datapath|ALU:the_best_alu_in_kista|Mux2      ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Datapath|Register_File:rf|QA[0]              ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Datapath|Register_File:rf|QB[0]              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
@@ -242,8 +251,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-------------------------------------------------+
 ; Parameter Name ; Value ; Type                                            ;
 +----------------+-------+-------------------------------------------------+
-; M              ; 3     ; Signed Integer                                  ;
-; N              ; 10    ; Signed Integer                                  ;
+; M              ; 2     ; Signed Integer                                  ;
+; N              ; 4     ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -253,19 +262,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------+
 ; Parameter Name ; Value ; Type                                 ;
 +----------------+-------+--------------------------------------+
-; n              ; 10    ; Signed Integer                       ;
-; m              ; 3     ; Signed Integer                       ;
+; n              ; 4     ; Signed Integer                       ;
+; m              ; 2     ; Signed Integer                       ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:sweden_is_great ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; n              ; 10    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:the_best_alu_in_kista ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 4     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -284,17 +293,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Sep 11 14:54:56 2021
+    Info: Processing started: Mon Sep 13 10:17:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
     Info (12022): Found design unit 1: ALU-behave
     Info (12023): Found entity 1: ALU
 Info (12021): Found 2 design units, including 1 entities, in source file Register_File.vhd
-    Info (12022): Found design unit 1: Register_File-fuckyou
+    Info (12022): Found design unit 1: Register_File-rf
     Info (12023): Found entity 1: Register_File
 Info (12021): Found 2 design units, including 1 entities, in source file Datapath.vhd
-    Info (12022): Found design unit 1: Datapath-bitch
+    Info (12022): Found design unit 1: Datapath-dp
     Info (12023): Found entity 1: Datapath
 Info (12021): Found 2 design units, including 1 entities, in source file test_ALU.vhd
     Info (12022): Found design unit 1: test_ALU-test
@@ -305,20 +314,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file test_rf
 Info (12021): Found 2 design units, including 1 entities, in source file test_datapath.vhd
     Info (12022): Found design unit 1: test_datapath-test
     Info (12023): Found entity 1: test_datapath
+Info (12021): Found 2 design units, including 1 entities, in source file Clock_Divider.vhd
+    Info (12022): Found design unit 1: Clock_Divider-count
+    Info (12023): Found entity 1: Clock_Divider
 Info (12127): Elaborating entity "Datapath" for the top level hierarchy
 Info (12128): Elaborating entity "Register_File" for hierarchy "Register_File:rf"
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:sweden_is_great"
-Info (286030): Timing-Driven Synthesis is running
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:the_best_alu_in_kista"
+Info (12128): Elaborating entity "Clock_Divider" for hierarchy "Clock_Divider:cd"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 316 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 29 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 274 logic cells
+Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 133 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 682 megabytes
-    Info: Processing ended: Sat Sep 11 14:54:57 2021
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 628 megabytes
+    Info: Processing ended: Mon Sep 13 10:17:55 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
