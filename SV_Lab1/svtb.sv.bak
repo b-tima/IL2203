@@ -3,6 +3,7 @@
 module svtb;
   logic clk = 0;
 	logic reset;
+	logic bajskorv = 0;
 	logic write;
 	logic [15:0] data_in;
 	logic [2:0] address;
@@ -46,7 +47,7 @@ module svtb;
     // Iterate through each cobination
     for(address = 0; address < 8; address++) begin
       current_address = config_reg_t'(address);
-      $display("Checking register %0s", current_address.name());
+      $display("--------- Checking register %0s ------------", current_address.name());
       for(integer i = 0; i < 16; i++) begin
         reset = 1;
         @(negedge clk);
@@ -68,8 +69,10 @@ module svtb;
           temp_address = {address};
           // Check leakage
           for(int addr = 0; addr < 8; addr++) begin
-            address = addr;
+            address = {addr};
+            bajskorv = 1;
             @(negedge clk);
+            bajskorv = 0;
             if(address != temp_address) begin
               current_address = config_reg_t'(addr);
               case(current_address)
@@ -93,7 +96,6 @@ module svtb;
             end
           end
           address = {temp_address};
-          $display("this is me = %d, temp = %d", address, temp_address);
       end
       
       if(address == 7) break;

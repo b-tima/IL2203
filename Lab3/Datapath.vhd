@@ -26,8 +26,7 @@ port(
 	RB : IN std_logic_vector(M-1 downto 0);
 	ReadB : IN std_logic;
 	
-	BypassA : IN std_logic;
-	BypassB : IN std_logic;
+	Bypass : IN std_logic_vector(1 downto 0);
 	Offset: IN std_logic_vector(N-1 downto 0);
 	
 	OE : IN std_logic;
@@ -98,6 +97,9 @@ signal clk1hz : std_logic;
 signal qa_out : std_logic_vector(N-1 downto 0);
 signal qb_out : std_logic_vector(N-1 downto 0);
 
+signal internal_a_addr : std_logic_vector(M-1 downto 0);
+signal internal_read_a : std_logic;
+
 begin
 
 CLK1HZ_po <= clk1hz;
@@ -108,8 +110,8 @@ rf : Register_File generic map(N => N, M => M) port map(	RESET => not RESET,
 																			WD => rf_input,
 																			WAddr => WAddr,
 																			Write => Write,
-																			RA => RA,
-																			ReadA => ReadA,
+																			RA => internal_a_addr,
+																			ReadA => internal_read_a,
 																			RB => RB,
 																			ReadB => ReadB,
 																			QA => qa_out,
@@ -137,12 +139,20 @@ with OE select OUTPUT <=
 		sum when '1',
 		(others => 'Z') when others;
 
-with BypassA select alu_a <=
+with Bypass(0) select alu_a <=
 		Offset when '1',
 		qa_out when '0';
 		
-with BypassB select alu_b <=
+with Bypass(1) select alu_b <=
 		Offset when '1',
 		qb_out when '0';
+
+with Bypass(1) select internal_read_a <=
+		ReadA when '0',
+		'1' when '1';
+
+with Bypass(1) select internal_a_addr <=
+		RA when '0',
+		(others => '1') when '1';
 		
 end dp;

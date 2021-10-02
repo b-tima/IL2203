@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 d/home/morgan/git/IL2203/Lab1/simulation/modelsim
 Ealu
-Z1 w1631524738
+Z1 w1632725537
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -16,7 +16,7 @@ L6
 VR:G2Z9i4LS=SFYPfSI[oj2
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1631524768.122774
+Z9 !s108 1632725570.118490
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/ALU.vhd|
 Z11 !s107 /home/morgan/git/IL2203/Lab1/ALU.vhd|
 Z12 o-93 -work work -O0
@@ -30,7 +30,7 @@ R4
 DEx4 work 3 alu 0 22 R:G2Z9i4LS=SFYPfSI[oj2
 l26
 L19
-VEB7VEoBhR94h[?YAjifPT3
+VNnM_Sh9aIdS^R:^mOUWdd2
 R8
 31
 R9
@@ -38,7 +38,7 @@ R10
 R11
 R12
 R13
-!s100 1FL5W4BlR@^I[RdWP9>O13
+!s100 87ab^LjoFNaKPLSAAKOfz1
 !i10b 1
 Efull_adder
 Z14 w1630860866
@@ -52,7 +52,7 @@ L5
 VfTaWiPWj6?`fo;G6<JR0n2
 R8
 31
-Z17 !s108 1631524768.019511
+Z17 !s108 1632725570.020741
 Z18 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/full_adder.vhd|
 Z19 !s107 /home/morgan/git/IL2203/Lab1/full_adder.vhd|
 R12
@@ -87,7 +87,7 @@ L5
 VAETDm>ZooX1OnCklnSV;;0
 R8
 31
-Z22 !s108 1631524768.048597
+Z22 !s108 1632725570.053172
 Z23 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
 Z24 !s107 /home/morgan/git/IL2203/Lab1/ripple_carry_adder.vhd|
 R12
@@ -125,7 +125,7 @@ V]OBbd>fh^L^jThE1M?L9L1
 R8
 31
 !i10b 1
-Z28 !s108 1631524768.203045
+Z28 !s108 1632725570.184548
 Z29 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/test_ALU.vhd|
 Z30 !s107 /home/morgan/git/IL2203/Lab1/test_ALU.vhd|
 R12
@@ -160,7 +160,7 @@ L6
 V6MnNYBPoMO>TY`kXg@aBG3
 R8
 31
-Z37 !s108 1631524768.082007
+Z37 !s108 1632725570.082791
 Z38 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
 Z39 !s107 /home/morgan/git/IL2203/Lab1/test_ripple_carry_adder.vhd|
 R12

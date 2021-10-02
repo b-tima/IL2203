@@ -42,14 +42,14 @@ with ReadB select QB <=
 	register_arr(to_integer(unsigned(RB))) when '1',
 	(others => '0') when others;
 
-process(CLK)
+process(CLK, RESET)
 begin
-	if rising_edge(CLK) then
-		if(RESET='1') then
-			for i in 2**M - 1 downto 0 loop
-				register_arr(i) <= (others => '0');
-			end loop;
-		elsif(Write = '1') then
+	if(RESET='1') then
+		for i in 2**M - 1 downto 0 loop
+			register_arr(i) <= (others => '0');
+		end loop;
+	elsif rising_edge(CLK) then
+		if(Write = '1') then
 			register_arr(to_integer(unsigned(WAddr))) <= WD;
 		end if;
 	end if;

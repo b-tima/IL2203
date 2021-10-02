@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1
-Mon Sep 13 11:20:59 2021
+Mon Sep 27 08:52:23 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,13 +44,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 13 11:20:59 2021           ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 27 08:52:23 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab1                                            ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 52                                              ;
-;     Total combinational functions  ; 52                                              ;
+; Total logic elements               ; 55                                              ;
+;     Total combinational functions  ; 55                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 27                                              ;
@@ -179,16 +179,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 52    ;
+; Estimated Total logic elements              ; 55    ;
 ;                                             ;       ;
-; Total combinational functions               ; 52    ;
+; Total combinational functions               ; 55    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 24    ;
-;     -- 3 input functions                    ; 18    ;
-;     -- <=2 input functions                  ; 10    ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 21    ;
+;     -- <=2 input functions                  ; 11    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 45    ;
+;     -- normal mode                          ; 48    ;
 ;     -- arithmetic mode                      ; 7     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
@@ -198,8 +198,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 27    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; OP[0] ;
-; Maximum fan-out                             ; 18    ;
-; Total fan-out                               ; 180   ;
+; Maximum fan-out                             ; 19    ;
+; Total fan-out                               ; 187   ;
 ; Average fan-out                             ; 2.28  ;
 +---------------------------------------------+-------+
 
@@ -209,7 +209,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |ALU                       ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |ALU                ; work         ;
+; |ALU                       ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |ALU                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -220,7 +220,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
 ; sub_overflow                                       ; Equal0              ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                     ;                        ;
+; add_overflow                                       ; add_overflow        ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -274,7 +275,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 13 11:20:57 2021
+    Info: Processing started: Mon Sep 27 08:52:21 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
@@ -294,18 +295,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file test_AL
     Info (12023): Found entity 1: test_ALU
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Warning (10631): VHDL Process Statement warning at ALU.vhd(54): inferring latch(es) for signal or variable "sub_overflow", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(54): inferring latch(es) for signal or variable "add_overflow", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "add_overflow" at ALU.vhd(54)
 Info (10041): Inferred latch for "sub_overflow" at ALU.vhd(54)
 Warning (13012): Latch sub_overflow has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal OP[0]
+Warning (13012): Latch add_overflow has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal OP[0]
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 52 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 630 megabytes
-    Info: Processing ended: Mon Sep 13 11:20:59 2021
+    Info (21061): Implemented 55 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 628 megabytes
+    Info: Processing ended: Mon Sep 27 08:52:23 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

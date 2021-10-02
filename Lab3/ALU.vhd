@@ -41,7 +41,7 @@ begin
 		A xor B when "100",
 		not A when "101",
 		A when "110",
-		(others => '0') when others;
+		std_logic_vector(A_u+1) when others;
 	
 	-- Z_Flag
 	sum_or(N-2) <= sum_rtl (N-1) or sum_rtl (N-2);

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 d/home/morgan/git/IL2203/Lab2/simulation/modelsim
 Ealu
-Z1 w1631360111
+Z1 w1631524842
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -16,7 +16,7 @@ L6
 VFNcalG0QfNUYn@Kj^jT:J2
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1631364916.489614
+Z9 !s108 1632727384.959505
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/ALU.vhd|
 Z11 !s107 /home/morgan/git/IL2203/Lab2/ALU.vhd|
 Z12 o-93 -work work -O0
@@ -28,9 +28,9 @@ R2
 R3
 R4
 DEx4 work 3 alu 0 22 FNcalG0QfNUYn@Kj^jT:J2
-l31
+l32
 L23
-V`H4S4k83TM7WG7Z>ZI9n40
+VGEC:Yio:?QfIAjI;LcFkM1
 R8
 31
 R9
@@ -38,36 +38,36 @@ R10
 R11
 R12
 R13
-!s100 `;CW4Z@zmCKlCT:;7WSbZ2
+!s100 LR]968@F5X`WHTmciD=001
 !i10b 1
-Edatapath
-Z14 w1631364643
+Eclock_divider
+Z14 w1631517273
 R2
 R3
 R4
 R5
-Z15 8/home/morgan/git/IL2203/Lab2/Datapath.vhd
-Z16 F/home/morgan/git/IL2203/Lab2/Datapath.vhd
+Z15 8/home/morgan/git/IL2203/Lab2/Clock_Divider.vhd
+Z16 F/home/morgan/git/IL2203/Lab2/Clock_Divider.vhd
 l0
 L6
-V9VkNe7I_^fN[az[fdL>6D1
+V]TC>[KJ=i?IY:ZM;nnE>W2
 R8
 31
-Z17 !s108 1631364916.517225
-Z18 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/Datapath.vhd|
-Z19 !s107 /home/morgan/git/IL2203/Lab2/Datapath.vhd|
+Z17 !s108 1632727385.222796
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/Clock_Divider.vhd|
+Z19 !s107 /home/morgan/git/IL2203/Lab2/Clock_Divider.vhd|
 R12
 R13
-!s100 =J7mdkN9HB0Ug@eWD8SXC2
+!s100 PP[30?3dO_=]N^UGm:@:i2
 !i10b 1
-Abitch
+Acount
 R2
 R3
 R4
-DEx4 work 8 datapath 0 22 9VkNe7I_^fN[az[fdL>6D1
-l84
-L39
-V<WDH_zhO3RmRC:f=1_ZP;0
+DEx4 work 13 clock_divider 0 22 ]TC>[KJ=i?IY:ZM;nnE>W2
+l18
+L13
+V51Mf0AXL]iX5L?[[RRVzf2
 R8
 31
 R17
@@ -75,36 +75,36 @@ R18
 R19
 R12
 R13
-!s100 [dN373cLB6=el4^_fAdlW2
+!s100 iF`a2=J4FF@V[0j;465Fc1
 !i10b 1
-Eregister_file
-Z20 w1631364176
+Edatapath
+Z20 w1632727354
 R2
 R3
 R4
 R5
-Z21 8/home/morgan/git/IL2203/Lab2/Register_File.vhd
-Z22 F/home/morgan/git/IL2203/Lab2/Register_File.vhd
+Z21 8/home/morgan/git/IL2203/Lab2/Datapath.vhd
+Z22 F/home/morgan/git/IL2203/Lab2/Datapath.vhd
 l0
 L6
-V>egd0hZUJ=O4S?2Kk@bRl1
+V7UKmGP8fBN9H<Ek@<NW2U0
 R8
 31
-Z23 !s108 1631364916.504384
-Z24 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/Register_File.vhd|
-Z25 !s107 /home/morgan/git/IL2203/Lab2/Register_File.vhd|
+Z23 !s108 1632727385.039949
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/Datapath.vhd|
+Z25 !s107 /home/morgan/git/IL2203/Lab2/Datapath.vhd|
 R12
 R13
-!s100 3;KE]n=jchTZgoTAC75AT3
+!s100 UXbm3^LECmBR]DEe55Cf?0
 !i10b 1
-Afuckyou
+Adp
 R2
 R3
 R4
-DEx4 work 13 register_file 0 22 >egd0hZUJ=O4S?2Kk@bRl1
-l35
-L27
-VSXX@WR1TPJ]BEAi5WMdQW1
+DEx4 work 8 datapath 0 22 7UKmGP8fBN9H<Ek@<NW2U0
+l96
+L41
+V6n1cJ5cQmdo;YOLEld[YA1
 R8
 31
 R23
@@ -112,24 +112,61 @@ R24
 R25
 R12
 R13
-!s100 LR:k^VY7VLYRCfZjEDg_62
+!s100 z[Ji=5nX2;4mMhX4QfcH<3
 !i10b 1
-Etest
-Z26 w1631359484
+Eregister_file
+Z26 w1632727140
 R2
 R3
 R4
 R5
-Z27 8/home/morgan/git/IL2203/Lab2/test_rf.vhd
-Z28 F/home/morgan/git/IL2203/Lab2/test_rf.vhd
+Z27 8/home/morgan/git/IL2203/Lab2/Register_File.vhd
+Z28 F/home/morgan/git/IL2203/Lab2/Register_File.vhd
+l0
+L6
+V>egd0hZUJ=O4S?2Kk@bRl1
+R8
+31
+Z29 !s108 1632727384.998223
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/Register_File.vhd|
+Z31 !s107 /home/morgan/git/IL2203/Lab2/Register_File.vhd|
+R12
+R13
+!s100 3;KE]n=jchTZgoTAC75AT3
+!i10b 1
+Arf
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 >egd0hZUJ=O4S?2Kk@bRl1
+l35
+L27
+V:I]ceJ3d[7d5kcfA^nzzH1
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 T13g[Do_^Qi>WzC8D@2542
+!i10b 1
+Etest
+Z32 w1631263586
+R2
+R3
+R4
+R5
+Z33 8/home/morgan/git/IL2203/Lab2/test_rf.vhd
+Z34 F/home/morgan/git/IL2203/Lab2/test_rf.vhd
 l0
 L6
 VTob`O4X9bVY8o;UFla3A32
 R8
 31
-Z29 !s108 1631364916.544483
-Z30 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_rf.vhd|
-Z31 !s107 /home/morgan/git/IL2203/Lab2/test_rf.vhd|
+Z35 !s108 1632727385.118918
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_rf.vhd|
+Z37 !s107 /home/morgan/git/IL2203/Lab2/test_rf.vhd|
 R12
 R13
 !s100 MPB9i;=k6@lBLXO:D4`z81
@@ -144,29 +181,29 @@ L10
 V>:iilnQRARdKjeV>ZKEo@1
 R8
 31
-R29
-R30
-R31
+R35
+R36
+R37
 R12
 R13
 !s100 LmmJ^5Gnl``U0QJ]Nl?Pg1
 !i10b 1
 Etest_alu
-R26
+Z38 w1631260794
 R2
 R3
 R4
 R5
-Z32 8/home/morgan/git/IL2203/Lab2/test_ALU.vhd
-Z33 F/home/morgan/git/IL2203/Lab2/test_ALU.vhd
+Z39 8/home/morgan/git/IL2203/Lab2/test_ALU.vhd
+Z40 F/home/morgan/git/IL2203/Lab2/test_ALU.vhd
 l0
 L6
 V]OBbd>fh^L^jThE1M?L9L1
 R8
 31
-Z34 !s108 1631364916.530163
-Z35 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_ALU.vhd|
-Z36 !s107 /home/morgan/git/IL2203/Lab2/test_ALU.vhd|
+Z41 !s108 1632727385.081735
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_ALU.vhd|
+Z43 !s107 /home/morgan/git/IL2203/Lab2/test_ALU.vhd|
 R12
 R13
 !s100 J8HE`JZNLFMb3nOVESaT83
@@ -181,21 +218,21 @@ L10
 Vahz[[d1kIEeNaWDz<Flh92
 R8
 31
-R34
-R35
-R36
+R41
+R42
+R43
 R12
 R13
 !s100 aRf[`PD0@kjLJi:QYnTjh3
 !i10b 1
 Etest_datapath
-Z37 w1631364893
+Z44 w1631514494
 R2
 R3
 R4
 R5
-Z38 8/home/morgan/git/IL2203/Lab2/test_datapath.vhd
-Z39 F/home/morgan/git/IL2203/Lab2/test_datapath.vhd
+Z45 8/home/morgan/git/IL2203/Lab2/test_datapath.vhd
+Z46 F/home/morgan/git/IL2203/Lab2/test_datapath.vhd
 l0
 L6
 VDh9;`km>o5L_lKM7Y1^An0
@@ -203,25 +240,25 @@ VDh9;`km>o5L_lKM7Y1^An0
 R8
 31
 !i10b 1
-Z40 !s108 1631364916.569422
-Z41 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_datapath.vhd|
-Z42 !s107 /home/morgan/git/IL2203/Lab2/test_datapath.vhd|
+Z47 !s108 1632727385.260902
+Z48 !s90 -reportprogress|300|-93|-work|work|/home/morgan/git/IL2203/Lab2/test_datapath.vhd|
+Z49 !s107 /home/morgan/git/IL2203/Lab2/test_datapath.vhd|
 R12
 R13
 Atest
 R2
 R3
 R4
-Z43 DEx4 work 13 test_datapath 0 22 Dh9;`km>o5L_lKM7Y1^An0
+Z50 DEx4 work 13 test_datapath 0 22 Dh9;`km>o5L_lKM7Y1^An0
 l69
 L9
-Z44 VBdV`;^d[Ho4gOEFY3>1o?2
-Z45 !s100 2PE28LVfFfD;[:`A6>Tza0
+Z51 VBdV`;^d[Ho4gOEFY3>1o?2
+Z52 !s100 2PE28LVfFfD;[:`A6>Tza0
 R8
 31
 !i10b 1
-R40
-R41
-R42
+R47
+R48
+R49
 R12
 R13

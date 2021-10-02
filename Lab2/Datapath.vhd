@@ -91,12 +91,16 @@ signal rf_input, alu_a, alu_b : std_logic_vector(N-1 downto 0);
 signal alu_en : std_logic;
 signal clk1hz : std_logic;
 
+signal temp_reset : std_logic;
+
 begin
 
 CLK1HZ_po <= clk1hz;
 alu_en <= OE or (not IE);
 
-rf : Register_File generic map(N => N, M => M) port map(	RESET => not RESET,
+temp_reset <= not RESET;
+
+rf : Register_File generic map(N => N, M => M) port map(	RESET => temp_reset,
 																			CLK => clk1hz,
 																			WD => rf_input,
 																			WAddr => WAddr,
@@ -109,7 +113,7 @@ rf : Register_File generic map(N => N, M => M) port map(	RESET => not RESET,
 																			QB => alu_b);
 																			
 																			
-the_best_alu_in_kista : ALU generic map(N => N) port map(	RESET => not RESET,
+the_best_alu_in_kista : ALU generic map(N => N) port map(	RESET => temp_reset,
 																				CLK => clk1hz,
 																				EN => alu_en,
 																				OP => OP,
