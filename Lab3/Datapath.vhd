@@ -31,8 +31,6 @@ port(
 	
 	OE : IN std_logic;
 	
-	CLK1HZ_po : out std_logic;
-	
 	OUTPUT : OUT std_logic_vector(N-1 downto 0);
 	
 	Z_Flag : OUT std_logic;
@@ -102,7 +100,6 @@ signal internal_read_a : std_logic;
 
 begin
 
-CLK1HZ_po <= clk1hz;
 alu_en <= OE or (not IE);
 
 rf : Register_File generic map(N => N, M => M) port map(	RESET => not RESET,
@@ -128,8 +125,6 @@ the_best_alu_in_kista : ALU generic map(N => N) port map(	RESET => not RESET,
 																				Z_Flag => Z_Flag,
 																				N_Flag => N_Flag,
 																				O_Flag => O_Flag);
-
-cd : Clock_Divider port map(CLK100MHZ => CLK, CLK1HZ => clk1hz);
 																		
 with IE select rf_input <=
 		INPUT when '1',
