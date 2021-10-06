@@ -6,67 +6,66 @@ Z0 d/home/morgan/altera/13.0sp1/modelsim_ase/linuxaloem
 vconfig_reg
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
 !i10b 1
-Z2 !s100 J>Xdb@:nm:mC87FC71cJz3
-Z3 I<kjYcL>7]TY8n2B]V8Tf72
-Z4 VkVojo`X9mlhV=[LfODhRW1
-Z5 !s105 svtb_sv_unit
+!s100 8:>P=F8U:6@[G0zT>VU_f1
+I16OQnMKldFmezha5>?an11
+Z2 VkVojo`X9mlhV=[LfODhRW1
+!s105 config_reg_buggy_questa_svp_unit
 S1
-Z6 d/home/morgan/git/IL2203/SV_Lab1
-Z7 w1633088564
-Z8 Fconfig_reg_buggy_questa.svp
-Z9 8/home/morgan/git/IL2203/SV_Lab1/svtb.sv
-Z10 F/home/morgan/git/IL2203/SV_Lab1/svtb.sv
+Z3 d/home/morgan/git/IL2203/SV_Lab1
+w1632380368
+8/home/morgan/git/IL2203/SV_Lab1/config_reg_buggy_questa.svp
+F/home/morgan/git/IL2203/SV_Lab1/config_reg_buggy_questa.svp
 L0 21
-Z11 OV;L;10.1d;51
+Z4 OV;L;10.1d;51
 r1
 !s85 0
 31
-Z12 !s108 1633088582.366804
-Z13 !s107 config_reg_buggy_questa.svp|/home/morgan/git/IL2203/SV_Lab1/svtb.sv|
-Z14 !s90 -reportprogress|300|-work|work|-sv|/home/morgan/git/IL2203/SV_Lab1/svtb.sv|
+!s108 1633524688.418516
+!s107 /home/morgan/git/IL2203/SV_Lab1/config_reg_buggy_questa.svp|
+!s90 -reportprogress|300|-work|work|-sv|/home/morgan/git/IL2203/SV_Lab1/config_reg_buggy_questa.svp|
 !s101 -O0
-Z15 o-work work -sv -O0
+Z5 o-work work -sv -O0
 vsvtb
 R1
-!i10b 1
-Z16 !s100 m1N7dRPV3J4Z[d:X_dU7C1
-Z17 IQIj5=[@@1CE63XoZAGR8E3
-Z18 VHM@T;5I<9_Q]kkIK7nMHL1
-R5
+Z6 I^I6T]Q=65_mMC5cLGOMe:3
+Z7 VHM@T;5I<9_Q]kkIK7nMHL1
+Z8 !s105 svtb_sv_unit
 S1
-R6
-R7
-R9
-R10
+R3
+Z9 w1633524688
+Z10 8/home/morgan/git/IL2203/SV_Lab1/svtb.sv
+Z11 F/home/morgan/git/IL2203/SV_Lab1/svtb.sv
 L0 3
-R11
+R4
 r1
-!s85 0
 31
-R12
-R13
-R14
+Z12 !s108 1633524688.376483
+Z13 !s107 config_reg_buggy_questa.svp|/home/morgan/git/IL2203/SV_Lab1/svtb.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|/home/morgan/git/IL2203/SV_Lab1/svtb.sv|
+R5
+!i10b 1
+Z15 !s100 OMjz0V7IFPPS1]`DIN3Mo0
+!s85 0
 !s101 -O0
-R15
 Xsvtb_sv_unit
 R1
-Z19 VlTaP76TQkZXF44lFNRI^@0
+Z16 VlTaP76TQkZXF44lFNRI^@0
 r1
 31
-Z20 IlTaP76TQkZXF44lFNRI^@0
+Z17 IlTaP76TQkZXF44lFNRI^@0
 S1
-R6
-Z21 w1632385984
-R9
+R3
+Z18 w1632385984
 R10
-R8
-L0 3
 R11
-Z22 !s108 1632385984.913031
-Z23 !s107 config_reg_buggy_questa.svp|/home/morgan/git/IL2203/SV_Lab1/svtb.sv|
+Z19 Fconfig_reg_buggy_questa.svp
+L0 3
+R4
+Z20 !s108 1632385984.913031
+R13
 R14
-R15
-Z24 !s100 m8nKUmDA5DBJbmN12k8ZM1
+R5
+Z21 !s100 m8nKUmDA5DBJbmN12k8ZM1
 !s85 0
 !i10b 1
 !i103 1

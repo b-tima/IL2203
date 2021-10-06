@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Oct  4 16:48:38 2021
+Analysis & Synthesis Status : Successful - Wed Oct  6 13:18:05 2021
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Lab3
 Top-level Entity Name : MCU_FSM
 Family : Cyclone IV GX
-Total logic elements : 10
-    Total combinational functions : 6
-    Dedicated logic registers : 6
-Total registers : 6
+Total logic elements : 578
+    Total combinational functions : 436
+    Dedicated logic registers : 181
+Total registers : 181
 Total pins : 51
 Total virtual pins : 0
 Total memory bits : 0

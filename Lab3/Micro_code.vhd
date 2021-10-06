@@ -25,130 +25,130 @@ architecture ROM of micro_code is
 	
 -- IE, OE, ReadA, ReadB, Write, ALU, Bypass, Read_NWrite, SEL, LE
 
-signal ADD_INSTRUCTION : uprogram :=(
+constant ADD_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '1', '1', opADD, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal SUB_INSTRUCTION : uprogram :=(
+constant SUB_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '1', '1', opSUB, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal AND_INSTRUCTION : uprogram :=(
+constant AND_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '1', '1', opAND, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal OR_INSTRUCTION : uprogram :=(
+constant OR_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '1', '1', opOR, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal XOR_INSTRUCTION : uprogram :=(
+constant XOR_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '1', '1', opXOR, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal NOR_INSTRUCTION : uprogram :=(
+constant NOR_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '0', '1', opNOT, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal MOV_INSTRUCTION : uprogram :=(
+constant MOV_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '0', '1', '0', '1', opMOV, No_B, Read, ZERO, LE_FLAG),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal NOP_INSTRUCTION : uprogram :=(
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_FLAG),
+constant NOP_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal LD_INSTRUCTION : uprogram :=(
-	('0', '1', '1', '0', '0', opMOV, No_B, Read, ZERO, LE_FLAG or LE_ADDR),	-- Latch Memory ADDR
+constant LD_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opINC, No_B, Read, ZERO, LE_IR),					-- Latch instruction
+	('0', '1', '1', '0', '0', opMOV, No_B, Read, ZERO, LE_ADDR),	-- Latch Memory ADDR
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),					-- Increment PC and Latch instruction ADDR
-	('1', '1', '1', '0', '1', opMOV, No_B, Read, ZERO, LE_NONE),				-- Store DIN in register
-	('0', '0', '0', '0', '0', opINC, No_B, Read, ZERO, LE_IR)					-- Latch instruction
+	('1', '1', '1', '0', '1', opMOV, No_B, Read, ZERO, LE_NONE)					-- Store DIN in register
 );
 
-signal ST_INSTRUCTION : uprogram :=(
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_FLAG or LE_DATA),
+constant ST_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Write, ZERO, LE_IR),
+	('0', '1', '1', '0', '0', opMOV, No_B, Read, ZERO, LE_DATA),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '1', '1', '0', '0', opMOV, No_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Write, ZERO, LE_IR)
+	('0', '1', '1', '0', '0', opMOV, No_B, Read, ZERO, LE_ADDR)
 );
 
-signal LDI_INSTRUCTION : uprogram :=(
-	('1', '0', '0', '0', '1', opMOV, No_B, Read, ZERO, LE_FLAG),
-	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+constant LDI_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),     -- Load next instruction
+	('1', '0', '0', '0', '1', opMOV, No_B, Read, ZERO, LE_NONE),   -- Read instruction data as input
+	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),	    -- Fetch next instruction
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)	   -- NOP
 );
 
-signal BRZ_INSTRUCTION_NO_Z : uprogram :=(
+constant BRZ_INSTRUCTION_NO_Z : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, ZERO, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRZ_INSTRUCTION_Z : uprogram :=(
+constant BRZ_INSTRUCTION_Z : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opADD, B_B, Read, ZERO, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRN_INSTRUCTION_NO_N : uprogram :=(
+constant BRN_INSTRUCTION_NO_N : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, NEG, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRN_INSTRUCTION_N : uprogram :=(
+constant BRN_INSTRUCTION_N : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opADD, B_B, Read, NEG, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRO_INSTRUCTION_NO_O : uprogram :=(
+constant BRO_INSTRUCTION_NO_O : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opINC, B_B, Read, OVF, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRO_INSTRUCTION_O : uprogram :=(
+constant BRO_INSTRUCTION_O : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opADD, B_B, Read, OVF, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
-signal BRA_INSTRUCTION : uprogram :=(
+constant BRA_INSTRUCTION : uprogram :=(
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
 	('0', '1', '1', '0', '1', opADD, B_B, Read, ZERO, LE_ADDR),
 	('0', '0', '0', '0', '0', opADD, No_B, Read, ZERO, LE_NONE),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR),
-	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_IR)
+	('0', '0', '0', '0', '0', opMOV, No_B, Read, ZERO, LE_NONE)
 );
 
 signal running_uprogram : uprogram;
@@ -167,7 +167,7 @@ Bypass <= running_instruction.Bypass;
 SEL <= running_instruction.SEL;
 LE <= running_instruction.LE;
 
-running_instruction <= running_uprogram(to_integer(unsigned(uPC)));
+running_instruction <= running_uprogram(3-to_integer(unsigned(uPC)));
 
 with OP & Z_N_O select running_uprogram <=
 	ADD_INSTRUCTION when "00000",
@@ -198,7 +198,8 @@ with OP & Z_N_O select running_uprogram <=
 	BRN_INSTRUCTION_N when "11011",
 	BRO_INSTRUCTION_NO_O when "11100",
 	BRO_INSTRUCTION_O when "11101",
-	BRA_INSTRUCTION when "1111-",
+	BRA_INSTRUCTION when "11110",
+	BRA_INSTRUCTION when "11111",
 	NOP_INSTRUCTION when others;
 
 end ROM;

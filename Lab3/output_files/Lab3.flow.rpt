@@ -1,5 +1,5 @@
 Flow report for Lab3
-Mon Oct  4 16:48:56 2021
+Wed Oct  6 13:18:29 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct  4 16:48:56 2021           ;
+; Flow Status                        ; Successful - Wed Oct  6 13:18:29 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab3                                            ;
 ; Top-level Entity Name              ; MCU_FSM                                         ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 8 / 21,280 ( < 1 % )                            ;
-;     Total combinational functions  ; 6 / 21,280 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 6 / 21,280 ( < 1 % )                            ;
-; Total registers                    ; 6                                               ;
+; Total logic elements               ; 493 / 21,280 ( 2 % )                            ;
+;     Total combinational functions  ; 436 / 21,280 ( 2 % )                            ;
+;     Dedicated logic registers      ; 181 / 21,280 ( < 1 % )                          ;
+; Total registers                    ; 181                                             ;
 ; Total pins                         ; 51 / 167 ( 31 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 774,144 ( 0 % )                             ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/04/2021 16:48:36 ;
+; Start date & time ; 10/06/2021 13:18:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab3                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.163335891613569      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.163351908161954      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057               ; --            ; MCU_FSM     ; Top            ;
@@ -95,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 643 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 835 MB              ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 582 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 560 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 839 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 637 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 858 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 599 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 562 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 849 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:20                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

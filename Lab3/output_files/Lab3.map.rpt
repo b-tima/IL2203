@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Mon Oct  4 16:48:38 2021
+Wed Oct  6 13:18:05 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,17 +13,16 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |MCU_FSM
- 12. Parameter Settings for User Entity Instance: Datapath:dp
- 13. Parameter Settings for User Entity Instance: Datapath:dp|Register_File:rf
- 14. Parameter Settings for User Entity Instance: Datapath:dp|ALU:the_best_alu_in_kista
- 15. Port Connectivity Checks: "micro_code:ucode"
- 16. Port Connectivity Checks: "Datapath:dp"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |MCU_FSM
+ 13. Parameter Settings for User Entity Instance: Datapath:dp
+ 14. Parameter Settings for User Entity Instance: Datapath:dp|Register_File:rf
+ 15. Parameter Settings for User Entity Instance: Datapath:dp|ALU:the_best_alu_in_kista
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -49,15 +48,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct  4 16:48:38 2021           ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct  6 13:18:05 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab3                                            ;
 ; Top-level Entity Name              ; MCU_FSM                                         ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 10                                              ;
-;     Total combinational functions  ; 6                                               ;
-;     Dedicated logic registers      ; 6                                               ;
-; Total registers                    ; 6                                               ;
+; Total logic elements               ; 578                                             ;
+;     Total combinational functions  ; 436                                             ;
+;     Dedicated logic registers      ; 181                                             ;
+; Total registers                    ; 181                                             ;
 ; Total pins                         ; 51                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -193,342 +192,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                 ; 51               ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; CLK~input        ;
-; Maximum fan-out          ; 6                ;
-; Total fan-out            ; 85               ;
-; Average fan-out          ; 0.75             ;
+; Maximum fan-out          ; 181              ;
+; Total fan-out            ; 2253             ;
+; Average fan-out          ; 3.13             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------+--------------+
-; |MCU_FSM                   ; 6 (2)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 51   ; 0            ; |MCU_FSM                  ; work         ;
-;    |micro_code:ucode|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MCU_FSM|micro_code:ucode ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
+; |MCU_FSM                          ; 436 (13)          ; 181 (53)     ; 0           ; 0            ; 0       ; 0         ; 0         ; 51   ; 0            ; |MCU_FSM                                       ; work         ;
+;    |Datapath:dp|                  ; 397 (105)         ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MCU_FSM|Datapath:dp                           ; work         ;
+;       |ALU:the_best_alu_in_kista| ; 146 (146)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MCU_FSM|Datapath:dp|ALU:the_best_alu_in_kista ; work         ;
+;       |Register_File:rf|          ; 146 (146)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MCU_FSM|Datapath:dp|Register_File:rf          ; work         ;
+;    |micro_code:ucode|             ; 26 (26)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MCU_FSM|micro_code:ucode                      ; work         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                        ;
-+--------------------------------------------------+----------------------------------------+
-; Register name                                    ; Reason for Removal                     ;
-+--------------------------------------------------+----------------------------------------+
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[0..15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[0][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[1][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[2][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[3][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[4][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[5][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[6][15] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][0]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][1]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][2]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][3]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][4]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][5]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][6]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][7]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][8]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][9]  ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][10] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][11] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][12] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][13] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][14] ; Stuck at GND due to stuck port clock   ;
-; Datapath:dp|Register_File:rf|register_arr[7][15] ; Stuck at GND due to stuck port clock   ;
-; Data_out[13]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Data_out[12]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Data_out[11]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Data_out[10]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Data_out[9]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[8]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[7]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[6]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[5]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[4]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[3]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[2]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[1]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[0]~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; Data_out[14]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Data_out[15]~reg0                                ; Stuck at GND due to stuck port data_in ;
-; Address_out[0]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[1]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[2]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[3]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[4]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[5]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[6]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[7]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[8]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[9]~reg0                              ; Stuck at GND due to stuck port data_in ;
-; Address_out[10]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Address_out[11]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Address_out[12]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Address_out[13]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Address_out[14]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Address_out[15]~reg0                             ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 176          ;                                        ;
-+--------------------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                    ;
-+-----------------------------------------------+-------------------------+----------------------------------------------------------------------+
-; Register name                                 ; Reason for Removal      ; Registers Removed due to This Register                               ;
-+-----------------------------------------------+-------------------------+----------------------------------------------------------------------+
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[14] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][14],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][14],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][14], Data_out[14]~reg0, ;
-;                                               ;                         ; Address_out[14]~reg0                                                 ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[13] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][13],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][13],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][13], Data_out[13]~reg0, ;
-;                                               ;                         ; Address_out[13]~reg0                                                 ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[12] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][12],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][12],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][12], Data_out[12]~reg0, ;
-;                                               ;                         ; Address_out[12]~reg0                                                 ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[11] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][11],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][11],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][11], Data_out[11]~reg0, ;
-;                                               ;                         ; Address_out[11]~reg0                                                 ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[10] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][10],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][10],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][10], Data_out[10]~reg0, ;
-;                                               ;                         ; Address_out[10]~reg0                                                 ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[9]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][9],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][9],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][9], Data_out[9]~reg0,   ;
-;                                               ;                         ; Address_out[9]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[8]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][8],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][8],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][8], Data_out[8]~reg0,   ;
-;                                               ;                         ; Address_out[8]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[7]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][7],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][7],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][7], Data_out[7]~reg0,   ;
-;                                               ;                         ; Address_out[7]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[6]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][6],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][6],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][6], Data_out[6]~reg0,   ;
-;                                               ;                         ; Address_out[6]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[5]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][5],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][5],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][5], Data_out[5]~reg0,   ;
-;                                               ;                         ; Address_out[5]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[4]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][4],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][4],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][4], Data_out[4]~reg0,   ;
-;                                               ;                         ; Address_out[4]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[3]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][3],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][3],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][3], Data_out[3]~reg0,   ;
-;                                               ;                         ; Address_out[3]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[2]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][2],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][2],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][2], Data_out[2]~reg0,   ;
-;                                               ;                         ; Address_out[2]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[1]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][1],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][1],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][1], Data_out[1]~reg0,   ;
-;                                               ;                         ; Address_out[1]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[0]  ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][0],                     ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][0],                     ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[7][0], Data_out[0]~reg0,   ;
-;                                               ;                         ; Address_out[0]~reg0                                                  ;
-; Datapath:dp|ALU:the_best_alu_in_kista|SUM[15] ; Stuck at GND            ; Datapath:dp|Register_File:rf|register_arr[0][15],                    ;
-;                                               ; due to stuck port clock ; Datapath:dp|Register_File:rf|register_arr[1][15],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[2][15],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[3][15],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[4][15],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[5][15],                    ;
-;                                               ;                         ; Datapath:dp|Register_File:rf|register_arr[6][15], Data_out[15]~reg0, ;
-;                                               ;                         ; Address_out[15]~reg0                                                 ;
-+-----------------------------------------------+-------------------------+----------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                        ;
++----------------------------------------------------+----------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                          ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------------------------------+------------------------+
+; Datapath:dp|ALU:the_best_alu_in_kista|sub_overflow ; Datapath:dp|ALU:the_best_alu_in_kista|Equal1 ; yes                    ;
+; Datapath:dp|ALU:the_best_alu_in_kista|add_overflow ; Datapath:dp|ALU:the_best_alu_in_kista|Equal0 ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                                              ;                        ;
++----------------------------------------------------+----------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -536,14 +229,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 181   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 34    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 179   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; instruction_reg[12]                    ; 19      ;
+; instruction_reg[14]                    ; 17      ;
+; instruction_reg[13]                    ; 30      ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[7][3]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[6][7]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[5][8]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[4][11] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[3][15] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[2][12] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[1][12] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MCU_FSM|Datapath:dp|Register_File:rf|register_arr[0][14] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MCU_FSM|Datapath:dp|rf_input[8]                          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MCU_FSM|micro_code:ucode|Mux5                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MCU_FSM|micro_code:ucode|Mux2                            ;
+; 8:1                ; 15 bits   ; 75 LEs        ; 75 LEs               ; 0 LEs                  ; No         ; |MCU_FSM|Datapath:dp|ALU:the_best_alu_in_kista|Mux1       ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |MCU_FSM|Datapath:dp|Register_File:rf|QA[15]              ;
+; 10:1               ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |MCU_FSM|Datapath:dp|Selector18                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -589,33 +316,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "micro_code:ucode"                                                                    ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; sel   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; le[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Datapath:dp"                                                                          ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; z_flag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; n_flag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_flag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -625,7 +331,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct  4 16:48:35 2021
+    Info: Processing started: Wed Oct  6 13:18:01 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 0 entities, in source file Instruction.vhd
@@ -658,45 +364,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file Micro_c
     Info (12022): Found design unit 1: micro_code-ROM
     Info (12023): Found entity 1: micro_code
 Info (12127): Elaborating entity "MCU_FSM" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MCU_FSM.vhd(83): object "sel" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at MCU_FSM.vhd(87): object "Z" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at MCU_FSM.vhd(87): object "Neg" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at MCU_FSM.vhd(87): object "O" assigned a value but never read
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(88): used implicit default value for signal "Z_N_O" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(92): used implicit default value for signal "Din" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(94): used implicit default value for signal "OFFSET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(99): used implicit default value for signal "RA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(100): used implicit default value for signal "RB" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MCU_FSM.vhd(101): used implicit default value for signal "WAddr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "Datapath" for hierarchy "Datapath:dp"
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(93): used implicit default value for signal "clk1hz" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "Register_File" for hierarchy "Datapath:dp|Register_File:rf"
 Info (12128): Elaborating entity "ALU" for hierarchy "Datapath:dp|ALU:the_best_alu_in_kista"
-Warning (10631): VHDL Process Statement warning at ALU.vhd(60): inferring latch(es) for signal or variable "sub_overflow", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "sub_overflow" at ALU.vhd(60)
+Warning (10631): VHDL Process Statement warning at ALU.vhd(61): inferring latch(es) for signal or variable "sub_overflow", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(61): inferring latch(es) for signal or variable "add_overflow", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "add_overflow" at ALU.vhd(61)
+Info (10041): Inferred latch for "sub_overflow" at ALU.vhd(61)
 Info (12128): Elaborating entity "micro_code" for hierarchy "micro_code:ucode"
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(28): used explicit default value for signal "ADD_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(35): used explicit default value for signal "SUB_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(42): used explicit default value for signal "AND_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(49): used explicit default value for signal "OR_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(56): used explicit default value for signal "XOR_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(63): used explicit default value for signal "NOR_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(70): used explicit default value for signal "MOV_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(77): used explicit default value for signal "NOP_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(84): used explicit default value for signal "LD_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(91): used explicit default value for signal "ST_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(98): used explicit default value for signal "LDI_INSTRUCTION" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(105): used explicit default value for signal "BRZ_INSTRUCTION_NO_Z" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(112): used explicit default value for signal "BRZ_INSTRUCTION_Z" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(119): used explicit default value for signal "BRN_INSTRUCTION_NO_N" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(126): used explicit default value for signal "BRN_INSTRUCTION_N" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(133): used explicit default value for signal "BRO_INSTRUCTION_NO_O" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(140): used explicit default value for signal "BRO_INSTRUCTION_O" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at Micro_code.vhd(147): used explicit default value for signal "BRA_INSTRUCTION" because signal was never assigned a value
-Warning (10325): VHDL Choice warning at Micro_code.vhd(201): ignored choice containing meta-value ""1111-""
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[1]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[1]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[2]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[3]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[4]" feeding internal logic into a wire
@@ -711,64 +389,21 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[13]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[14]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "Datapath:dp|OUTPUT[15]" feeding internal logic into a wire
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Data_out[0]" is stuck at GND
-    Warning (13410): Pin "Data_out[1]" is stuck at GND
-    Warning (13410): Pin "Data_out[2]" is stuck at GND
-    Warning (13410): Pin "Data_out[3]" is stuck at GND
-    Warning (13410): Pin "Data_out[4]" is stuck at GND
-    Warning (13410): Pin "Data_out[5]" is stuck at GND
-    Warning (13410): Pin "Data_out[6]" is stuck at GND
-    Warning (13410): Pin "Data_out[7]" is stuck at GND
-    Warning (13410): Pin "Data_out[8]" is stuck at GND
-    Warning (13410): Pin "Data_out[9]" is stuck at GND
-    Warning (13410): Pin "Data_out[10]" is stuck at GND
-    Warning (13410): Pin "Data_out[11]" is stuck at GND
-    Warning (13410): Pin "Data_out[12]" is stuck at GND
-    Warning (13410): Pin "Data_out[13]" is stuck at GND
-    Warning (13410): Pin "Data_out[14]" is stuck at GND
-    Warning (13410): Pin "Data_out[15]" is stuck at GND
-    Warning (13410): Pin "Address_out[0]" is stuck at GND
-    Warning (13410): Pin "Address_out[1]" is stuck at GND
-    Warning (13410): Pin "Address_out[2]" is stuck at GND
-    Warning (13410): Pin "Address_out[3]" is stuck at GND
-    Warning (13410): Pin "Address_out[4]" is stuck at GND
-    Warning (13410): Pin "Address_out[5]" is stuck at GND
-    Warning (13410): Pin "Address_out[6]" is stuck at GND
-    Warning (13410): Pin "Address_out[7]" is stuck at GND
-    Warning (13410): Pin "Address_out[8]" is stuck at GND
-    Warning (13410): Pin "Address_out[9]" is stuck at GND
-    Warning (13410): Pin "Address_out[10]" is stuck at GND
-    Warning (13410): Pin "Address_out[11]" is stuck at GND
-    Warning (13410): Pin "Address_out[12]" is stuck at GND
-    Warning (13410): Pin "Address_out[13]" is stuck at GND
-    Warning (13410): Pin "Address_out[14]" is stuck at GND
-    Warning (13410): Pin "Address_out[15]" is stuck at GND
+Warning (13012): Latch Datapath:dp|ALU:the_best_alu_in_kista|sub_overflow has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC[0]
+Warning (13012): Latch Datapath:dp|ALU:the_best_alu_in_kista|add_overflow has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC[0]
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "RESET"
-    Warning (15610): No output dependent on input pin "Instruction[0]"
-    Warning (15610): No output dependent on input pin "Instruction[1]"
-    Warning (15610): No output dependent on input pin "Instruction[2]"
-    Warning (15610): No output dependent on input pin "Instruction[3]"
-    Warning (15610): No output dependent on input pin "Instruction[4]"
-    Warning (15610): No output dependent on input pin "Instruction[5]"
-    Warning (15610): No output dependent on input pin "Instruction[6]"
-    Warning (15610): No output dependent on input pin "Instruction[7]"
-    Warning (15610): No output dependent on input pin "Instruction[8]"
-    Warning (15610): No output dependent on input pin "Instruction[9]"
-    Warning (15610): No output dependent on input pin "Instruction[10]"
-    Warning (15610): No output dependent on input pin "Instruction[11]"
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 661 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 96 warnings
-    Info: Peak virtual memory: 678 megabytes
-    Info: Processing ended: Mon Oct  4 16:48:38 2021
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 610 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 663 megabytes
+    Info: Processing ended: Wed Oct  6 13:18:05 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

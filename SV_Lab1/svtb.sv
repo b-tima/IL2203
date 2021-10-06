@@ -31,9 +31,12 @@ module svtb;
     // Reset is correct
     reset = 1;
     @(negedge clk);
+                @(negedge clk);
+                            @(negedge clk);
     reset = 0;
     for(address = 0; address < 8; address = address + 1) begin
       @(negedge clk);
+                  @(negedge clk);
       $display("For address %0d, data_out is = %0d at reset", address, data_out);
       case(config_reg_t'(address))
         adc0_reg: assert (data_out == 16'hFFFF);
@@ -51,10 +54,14 @@ module svtb;
       for(integer i = 0; i < 16; i++) begin
         reset = 1;
         @(negedge clk);
+            @(negedge clk);
+                        @(negedge clk);
         reset = 0;
         data_in = 1 << i;
         write = 1;
         @(negedge clk);
+                    @(negedge clk);
+                                @(negedge clk);
         if(data_in != data_out) begin
           $write("Output error. Expected ");
             for(integer i = 15; i >= 0; i--) begin
@@ -66,10 +73,15 @@ module svtb;
             end
           $display("\n");
         end
+        write = 0;
+         @(negedge clk);
+        @(negedge clk);
           temp_address = {address};
           // Check leakage
           for(int addr = 0; addr < 8; addr++) begin
             address = {addr};
+            @(negedge clk);
+            @(negedge clk);
             @(negedge clk);
             if(address != temp_address) begin
               current_address = config_reg_t'(addr);
@@ -95,7 +107,40 @@ module svtb;
           end
           address = {temp_address};
       end
-      
+      if(address == 7) break;
+    end
+    
+      // Write 10101010 reocoouring and reset
+    for(address = 0; address < 8; address++) begin
+      current_address = config_reg_t'(address);
+      //$display("--------- Checking register %0s ------------", current_address.name());
+      for(integer i = 0; i < 16; i++) begin
+        data_in = 16'hAAAA;
+        write = 1;
+        @(negedge clk);
+                    @(negedge clk);
+      end
+      if(address == 7) break;
+    end
+  
+    reset = 1;
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    @(negedge clk);
+    for(address = 0; address < 8; address = address + 1) begin
+      @(negedge clk);
+      $display("For address %0d, data_out is = %0d", address, data_out);
+      case(config_reg_t'(address))
+        adc0_reg: assert (data_out == 16'hFFFF);
+        analog_test: assert (data_out == 16'hABCD);
+        digital_config: assert (data_out == 16'h0001);
+        default: assert (data_out == 16'h0);
+      endcase
       if(address == 7) break;
     end
   end

@@ -1,0 +1,107 @@
+/home/morgan/git/IL2203/Lab3/Datapath.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/Datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Datapath
+-- Compiling architecture dp of Datapath
+
+} {} {}} /home/morgan/git/IL2203/Lab3/test_rf.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/test_rf.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity test
+-- Compiling architecture tset_tse_tes_s of test
+
+} {} {}} /home/morgan/git/IL2203/Lab3/Micro_code.vhd {2 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/Micro_code.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package micro_assembly
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity micro_code
+-- Compiling architecture ROM of micro_code
+** Warning: /home/morgan/git/IL2203/Lab3/Micro_code.vhd(172): (vcom-1186) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} /home/morgan/git/IL2203/Lab3/test_cpu_advanced.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/test_cpu_advanced.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package util
+-- Loading package micro_assembly
+-- Compiling entity test_cpu
+-- Compiling architecture test_cpu_advanced of test_cpu
+
+} {} {}} /home/morgan/git/IL2203/Lab3/Register_File.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/Register_File.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Register_File
+-- Compiling architecture rf of Register_File
+
+} {} {}} /home/morgan/git/IL2203/Lab3/test_ALU.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/test_ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity test_ALU
+-- Compiling architecture test of test_ALU
+
+} {} {}} /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd {2 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package micro_assembly
+-- Loading package NUMERIC_STD
+-- Compiling entity MCU_FSM
+-- Compiling architecture mcu of MCU_FSM
+** Warning: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd(118): (vcom-1186) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} /home/morgan/git/IL2203/Lab3/Instruction.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/Instruction.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package micro_assembly
+
+} {} {}} /home/morgan/git/IL2203/Lab3/ALU.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture behave of ALU
+
+} {} {}} /home/morgan/git/IL2203/Lab3/Clock_Divider.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/Clock_Divider.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Clock_Divider
+-- Compiling architecture count of Clock_Divider
+
+} {} {}} /home/morgan/git/IL2203/Lab3/test_datapath.vhd {1 {vcom -work work -2002 -explicit /home/morgan/git/IL2203/Lab3/test_datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity test_datapath
+-- Compiling architecture test of test_datapath
+
+} {} {}}
