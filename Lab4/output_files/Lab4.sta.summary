@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -8.590
+TNS   : -1378.269
+
+Type  : Slow 1200mV 85C Model Setup 'MCU_FSM:mcu|Neg_reg'
+Slack : -8.517
+TNS   : -16.698
+
+Type  : Slow 1200mV 85C Model Hold 'MCU_FSM:mcu|Neg_reg'
+Slack : -0.586
+TNS   : -0.607
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -206.522
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MCU_FSM:mcu|Neg_reg'
+Slack : -0.279
+TNS   : -1.209
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -7.607
+TNS   : -1220.065
+
+Type  : Slow 1200mV 0C Model Setup 'MCU_FSM:mcu|Neg_reg'
+Slack : -7.572
+TNS   : -14.779
+
+Type  : Slow 1200mV 0C Model Hold 'MCU_FSM:mcu|Neg_reg'
+Slack : -0.563
+TNS   : -0.564
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -206.522
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MCU_FSM:mcu|Neg_reg'
+Slack : -0.199
+TNS   : -0.753
+
+Type  : Fast 1200mV 0C Model Setup 'MCU_FSM:mcu|Neg_reg'
+Slack : -4.731
+TNS   : -9.030
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -4.526
+TNS   : -705.295
+
+Type  : Fast 1200mV 0C Model Hold 'MCU_FSM:mcu|Neg_reg'
+Slack : -0.293
+TNS   : -0.314
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -212.568
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MCU_FSM:mcu|Neg_reg'
+Slack : 0.089
+TNS   : 0.000
+
+------------------------------------------------------------

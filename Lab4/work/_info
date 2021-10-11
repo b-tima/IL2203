@@ -1,0 +1,590 @@
+m255
+K3
+13
+cModel Technology
+d/home/morgan/git/IL2203/SV_Lab1
+Ealu
+Z0 w1633512847
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/morgan/git/IL2203/Lab4
+Z5 8/home/morgan/git/IL2203/Lab4/ALU.vhd
+Z6 F/home/morgan/git/IL2203/Lab4/ALU.vhd
+l0
+L6
+V;HV@aW9`_<LR:a?agWW<03
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1633964347.627534
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/ALU.vhd|
+Z10 !s107 /home/morgan/git/IL2203/Lab4/ALU.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 L3F;=K1B_33^k@5<XC5z]3
+!i10b 1
+Abehave
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 ;HV@aW9`_<LR:a?agWW<03
+l28
+L19
+V^[dS1XCDnIA`Mj95=ihDP1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 okn:1AF_MkS=S7HbGQQHM2
+!i10b 1
+Eclock_divider
+Z13 w1631517273
+R1
+R2
+R3
+R4
+Z14 8/home/morgan/git/IL2203/Lab4/Clock_Divider.vhd
+Z15 F/home/morgan/git/IL2203/Lab4/Clock_Divider.vhd
+l0
+L6
+V_m9VzzEVE`ldLF4kJD0MM3
+R7
+32
+Z16 !s108 1633964347.674799
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Clock_Divider.vhd|
+Z18 !s107 /home/morgan/git/IL2203/Lab4/Clock_Divider.vhd|
+R11
+R12
+!s100 PP[30?3dO_=]N^UGm:@:i2
+!i10b 1
+Acount
+R1
+R2
+R3
+DEx4 work 13 clock_divider 0 22 _m9VzzEVE`ldLF4kJD0MM3
+l18
+L13
+VDzf`]FOWHP<FRRhM[_J]62
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 iF`a2=J4FF@V[0j;465Fc1
+!i10b 1
+Ecomputer
+Z19 w1633963822
+R1
+R2
+R3
+R4
+Z20 8/home/morgan/git/IL2203/Lab4/Computer.vhd
+Z21 F/home/morgan/git/IL2203/Lab4/Computer.vhd
+l0
+L8
+V1T3=8eSUj4]8`O[;fdlZe1
+R7
+32
+Z22 !s108 1633964347.718577
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Computer.vhd|
+Z24 !s107 /home/morgan/git/IL2203/Lab4/Computer.vhd|
+R11
+R12
+!s100 jma7gah^fEB?2UTa17aPm1
+!i10b 1
+Astructural
+R1
+R2
+R3
+DEx4 work 8 computer 0 22 1T3=8eSUj4]8`O[;fdlZe1
+l63
+L15
+VOOOA>RI3cTTzkA3GCbHOn3
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 <JXI7B6dMeaPgDik_<Z`a1
+!i10b 1
+Edatapath
+Z25 w1633506841
+R1
+R2
+R3
+R4
+Z26 8/home/morgan/git/IL2203/Lab4/Datapath.vhd
+Z27 F/home/morgan/git/IL2203/Lab4/Datapath.vhd
+l0
+L6
+VVWYbCRQ_LQEk6i68]jGig1
+R7
+32
+Z28 !s108 1633964347.767516
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Datapath.vhd|
+Z30 !s107 /home/morgan/git/IL2203/Lab4/Datapath.vhd|
+R11
+R12
+!s100 i0_dg0>40^UKN7c`[iazL1
+!i10b 1
+Adp
+R1
+R2
+R3
+DEx4 work 8 datapath 0 22 VWYbCRQ_LQEk6i68]jGig1
+l88
+L42
+VBcJUE9>Fe?d9QY`[B<`:e0
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 6;aD@on0e>WLn=>59Xfz10
+!i10b 1
+Egpio
+Z31 w1633961856
+R2
+R3
+R4
+Z32 8/home/morgan/git/IL2203/Lab4/GPIO.vhd
+Z33 F/home/morgan/git/IL2203/Lab4/GPIO.vhd
+l0
+L5
+VOYHVlO3SbC=][d7Eb:=Gf1
+R7
+32
+Z34 !s108 1633964347.814953
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/GPIO.vhd|
+Z36 !s107 /home/morgan/git/IL2203/Lab4/GPIO.vhd|
+R11
+R12
+!s100 oIYdS7ShE?1hh70NbJ;iQ1
+!i10b 1
+Abehave
+R2
+R3
+DEx4 work 4 gpio 0 22 OYHVlO3SbC=][d7Eb:=Gf1
+l17
+L15
+VfZEY0d;:A6VE91DDlW=W]0
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 0]V5^UHX;YC8b`Z^NJ@2?2
+!i10b 1
+Emcu_fsm
+Z37 w1633512575
+R1
+R2
+R3
+Z38 DPx4 work 14 micro_assembly 0 22 jP`zoFIAoDoPVKCz9LEVN0
+R4
+Z39 8/home/morgan/git/IL2203/Lab4/MCU_FSM.vhd
+Z40 F/home/morgan/git/IL2203/Lab4/MCU_FSM.vhd
+l0
+L7
+VJ30SYk^k@LJ0=82ohfbF21
+R7
+32
+Z41 !s108 1633964347.889066
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/MCU_FSM.vhd|
+Z43 !s107 /home/morgan/git/IL2203/Lab4/MCU_FSM.vhd|
+R11
+R12
+!s100 `^:Y<`AXFOJc?1@X=<g891
+!i10b 1
+Amcu
+R1
+R2
+R3
+R38
+DEx4 work 7 mcu_fsm 0 22 J30SYk^k@LJ0=82ohfbF21
+l111
+L22
+VNl5:loWMn`ONPUVa_[a]M2
+R7
+32
+R41
+R42
+R43
+R11
+R12
+!s100 [a`49F2jYbYi_Gjk8k;_L1
+!i10b 1
+Ememory_bit
+Z44 w1633957721
+R2
+R3
+R38
+R4
+Z45 8/home/morgan/git/IL2203/Lab4/memory_bit_pattern.vhd
+Z46 F/home/morgan/git/IL2203/Lab4/memory_bit_pattern.vhd
+l0
+L6
+V6lIf=9o;8ePXAVZd]n44F1
+R7
+32
+Z47 !s108 1633964347.943125
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/memory_bit_pattern.vhd|
+Z49 !s107 /home/morgan/git/IL2203/Lab4/memory_bit_pattern.vhd|
+R11
+R12
+!s100 IP_7@_B=2LgRc_1oRAcA=2
+!i10b 1
+Afake
+R2
+R3
+R38
+DEx4 work 10 memory_bit 0 22 6lIf=9o;8ePXAVZd]n44F1
+l35
+L8
+VAzIAm6<Am^??;0PUOL97S0
+R7
+32
+R47
+R48
+R49
+R11
+R12
+!s100 iF13X`9j?]UCL@g^C8ANA3
+!i10b 1
+Pmicro_assembly
+R2
+R3
+w1633957096
+R4
+8/home/morgan/git/IL2203/Lab4/Instruction.vhd
+F/home/morgan/git/IL2203/Lab4/Instruction.vhd
+l0
+L5
+VjP`zoFIAoDoPVKCz9LEVN0
+R7
+32
+R11
+R12
+!s100 1GhPT<^mW4aZ7c7^[K2S40
+!s108 1633964347.852978
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Instruction.vhd|
+!s107 /home/morgan/git/IL2203/Lab4/Instruction.vhd|
+!i10b 1
+Emicro_code
+Z50 w1633512446
+R1
+Z51 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z52 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R38
+R4
+Z53 8/home/morgan/git/IL2203/Lab4/Micro_code.vhd
+Z54 F/home/morgan/git/IL2203/Lab4/Micro_code.vhd
+l0
+L8
+VzXFYPLilY]X]hX9@<?6lA2
+R7
+32
+Z55 !s108 1633964347.980031
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Micro_code.vhd|
+Z57 !s107 /home/morgan/git/IL2203/Lab4/Micro_code.vhd|
+R11
+R12
+!s100 0O_54NOV2K<bRF6CX;;`M0
+!i10b 1
+Arom
+R1
+R51
+R52
+R2
+R3
+R38
+DEx4 work 10 micro_code 0 22 zXFYPLilY]X]hX9@<?6lA2
+l157
+L24
+VjOTlE43`efIoegLQI4jIn2
+R7
+32
+R55
+R56
+R57
+R11
+R12
+!s100 SMC<P8fAfCQ8JYQkWaRe`1
+!i10b 1
+vram
+I:[gQU7TgNbM^WB_j4gjLF2
+VYPnfGODfaSS;3ml?KH^Bl3
+R4
+Z58 w1633959241
+Z59 8/home/morgan/git/IL2203/Lab4/ram_syn.v
+Z60 F/home/morgan/git/IL2203/Lab4/ram_syn.v
+L0 1073
+Z61 OV;L;10.1d;51
+r1
+31
+Z62 !s108 1633964348.119753
+Z63 !s107 /home/morgan/git/IL2203/Lab4/ram_syn.v|
+Z64 !s90 -reportprogress|300|-work|work|/home/morgan/git/IL2203/Lab4/ram_syn.v|
+Z65 o-work work -O0
+!i10b 1
+!s100 TCXZJcFWLT:XofUMAaWoL1
+!s85 0
+!s101 -O0
+vram_altsyncram
+I1<]Wo`PXP0^L1Z1I6K?5m3
+VGgRln4jTCKERPUd4UL6YE3
+R4
+R58
+R59
+R60
+L0 47
+R61
+r1
+31
+R62
+R63
+R64
+R65
+!s100 ?P^V5=WnPJ3SdMZz63^LZ3
+!i10b 1
+!s85 0
+!s101 -O0
+Eregister_file
+Z66 w1633505984
+R1
+R2
+R3
+R4
+Z67 8/home/morgan/git/IL2203/Lab4/Register_File.vhd
+Z68 F/home/morgan/git/IL2203/Lab4/Register_File.vhd
+l0
+L6
+VJl]N;Wj0S?@in`B@>X_C61
+R7
+32
+Z69 !s108 1633964348.176414
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/Register_File.vhd|
+Z71 !s107 /home/morgan/git/IL2203/Lab4/Register_File.vhd|
+R11
+R12
+!s100 3;KE]n=jchTZgoTAC75AT3
+!i10b 1
+Arf
+R1
+R2
+R3
+DEx4 work 13 register_file 0 22 Jl]N;Wj0S?@in`B@>X_C61
+l35
+L27
+V1T0k51FVbD8KA[QTdf10i0
+R7
+32
+R69
+R70
+R71
+R11
+R12
+!s100 6J[i4gH6LWca<WWQQaPUm1
+!i10b 1
+Esim_comp
+Z72 w1633964349
+R2
+R3
+R4
+Z73 8/home/morgan/git/IL2203/Lab4/sim_comp.vhd
+Z74 F/home/morgan/git/IL2203/Lab4/sim_comp.vhd
+l0
+L8
+V^]imfX]0<B3e=Y:7_0o[Y2
+R7
+32
+Z75 !s108 1633964349.239938
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/sim_comp.vhd|
+Z77 !s107 /home/morgan/git/IL2203/Lab4/sim_comp.vhd|
+R11
+R12
+!s100 Zcd<khi8B`Og]Yhi;anj]2
+!i10b 1
+Asim
+R2
+R3
+DEx4 work 8 sim_comp 0 22 ^]imfX]0<B3e=Y:7_0o[Y2
+l24
+L10
+V>6;f8LQ9e:5K>KjQ5hfYN3
+R7
+32
+R75
+R76
+R77
+R11
+R12
+!s100 2:MQJNUd6RPSMR^LFmOic1
+!i10b 1
+Etest
+Z78 w1631263586
+R1
+R2
+R3
+R4
+Z79 8/home/morgan/git/IL2203/Lab4/test_rf.vhd
+Z80 F/home/morgan/git/IL2203/Lab4/test_rf.vhd
+l0
+L6
+Vgke[dDPzKmGG]B_o^@oYQ2
+!s100 MPB9i;=k6@lBLXO:D4`z81
+R7
+32
+!i10b 1
+Z81 !s108 1633964349.404267
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/test_rf.vhd|
+Z83 !s107 /home/morgan/git/IL2203/Lab4/test_rf.vhd|
+R11
+R12
+Atset_tse_tes_s
+R1
+R2
+R3
+Z84 DEx4 work 4 test 0 22 gke[dDPzKmGG]B_o^@oYQ2
+l40
+L10
+Z85 V;kd;U2l;ZRfSM3KnVc^Bb3
+Z86 !s100 LmmJ^5Gnl``U0QJ]Nl?Pg1
+R7
+32
+!i10b 1
+R81
+R82
+R83
+R11
+R12
+Etest_alu
+Z87 w1631260794
+R1
+R2
+R3
+R4
+Z88 8/home/morgan/git/IL2203/Lab4/test_ALU.vhd
+Z89 F/home/morgan/git/IL2203/Lab4/test_ALU.vhd
+l0
+L6
+Ve?cbRRKzeLiWeZW^GC__[2
+R7
+32
+Z90 !s108 1633964349.277768
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/test_ALU.vhd|
+Z92 !s107 /home/morgan/git/IL2203/Lab4/test_ALU.vhd|
+R11
+R12
+!s100 J8HE`JZNLFMb3nOVESaT83
+!i10b 1
+Atest
+R1
+R2
+R3
+DEx4 work 8 test_alu 0 22 e?cbRRKzeLiWeZW^GC__[2
+l36
+L10
+VlmKZOW5^@6@:JoHW=MRoS2
+R7
+32
+R90
+R91
+R92
+R11
+R12
+!s100 aRf[`PD0@kjLJi:QYnTjh3
+!i10b 1
+Etest_cpu
+Z93 w1633955851
+R38
+Z94 DPx12 modelsim_lib 4 util 0 22 Ci0SSDmVf2K[lFkJZoo=62
+R51
+R52
+R2
+R3
+R4
+Z95 8/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd
+Z96 F/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd
+l0
+L12
+VYFlkMT;Tkm1`Lj38jIakH0
+R7
+32
+Z97 !s108 1633964349.318560
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd|
+Z99 !s107 /home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd|
+R11
+R12
+!s100 HU80KITZ8ka5EXXYZW2P]2
+!i10b 1
+Atest_cpu_advanced
+R38
+R94
+R51
+R52
+R2
+R3
+DEx4 work 8 test_cpu 0 22 YFlkMT;Tkm1`Lj38jIakH0
+l67
+L15
+VOH2ZW3A9^GKg?f8MaI__n2
+R7
+32
+R97
+R98
+R99
+R11
+R12
+!s100 Dz_7@3Vh@=:k6OG7ibW_o2
+!i10b 1
+Etest_datapath
+Z100 w1631514494
+R1
+R2
+R3
+R4
+Z101 8/home/morgan/git/IL2203/Lab4/test_datapath.vhd
+Z102 F/home/morgan/git/IL2203/Lab4/test_datapath.vhd
+l0
+L6
+VSLNL6ZIJ_kVXomK`FWNfF2
+R7
+32
+Z103 !s108 1633964349.363821
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/morgan/git/IL2203/Lab4/test_datapath.vhd|
+Z105 !s107 /home/morgan/git/IL2203/Lab4/test_datapath.vhd|
+R11
+R12
+!s100 n=?8>ckR=O4jMRD2>EVbb2
+!i10b 1
+Atest
+R1
+R2
+R3
+DEx4 work 13 test_datapath 0 22 SLNL6ZIJ_kVXomK`FWNfF2
+l69
+L9
+VnP>eTi9<2i13:<m;P=0CF0
+!s100 2PE28LVfFfD;[:`A6>Tza0
+R7
+32
+R103
+R104
+R105
+R11
+R12
+!i10b 1

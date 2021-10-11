@@ -1,0 +1,21 @@
+library IEEE;
+use work.all;
+use work.micro_assembly.all;
+use ieee.std_logic_1164.all;
+
+entity memory_bit is end memory_bit;
+
+architecture fake of memory_bit is
+  
+  constant nu3 : std_logic_vector(2 downto 0) := "000";
+  
+  type program is array(255 downto 0) of std_logic_vector(15 downto 0);
+  signal ram : program := (
+    (LDI & R5 & B"1_0000_0000"),
+    (ADD & R5 & R5 & R5 & nu3),
+    others => (NOP & R0 & R0 & R0 & nu3)
+  );
+  
+begin
+  
+end fake;

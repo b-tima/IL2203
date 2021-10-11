@@ -1,455 +1,54 @@
 # Loading project SV_Lab1
 # reading /home/morgan/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project Lab3_modelsim
+# Loading project Lab4_modelsim
 # Compile of ALU.vhd was successful.
 # Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Load canceled
-# Load canceled
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Load canceled
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 2 failed with 2 errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd failed with 1 errors.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful.
 # Compile of Datapath.vhd was successful.
 # Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
 # Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
 # Compile of Register_File.vhd was successful.
 # Compile of test_ALU.vhd was successful.
 # Compile of test_cpu_advanced.vhd failed with 1 errors.
 # Compile of test_datapath.vhd was successful.
 # Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
+# Compile of Top_Level_MCU.vhd failed with 1 errors.
+# 15 compiles, 2 failed with 2 errors. 
 # Compile of ALU.vhd was successful.
 # Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful.
 # Compile of Datapath.vhd was successful.
 # Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
 # Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
 # Compile of Register_File.vhd was successful.
 # Compile of test_ALU.vhd was successful.
 # Compile of test_cpu_advanced.vhd failed with 1 errors.
 # Compile of test_datapath.vhd was successful.
 # Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
+# 14 compiles, 1 failed with 1 error. 
 # Compile of ALU.vhd was successful.
 # Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful.
 # Compile of Datapath.vhd was successful.
 # Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
 # Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
 # Compile of Register_File.vhd was successful.
 # Compile of test_ALU.vhd was successful.
 # Compile of test_cpu_advanced.vhd was successful.
 # Compile of test_datapath.vhd was successful.
 # Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-vsim work.test
-# vsim work.test 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.test(tset_tse_tes_s)
-# Loading work.register_file(rf)
-run
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd failed with 1 errors.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-restart
-# Loading work.test(tset_tse_tes_s)
-# Loading work.register_file(rf)
-vsim work.test(test_cpu_advanced)
-# vsim work.test(test_cpu_advanced) 
+# 14 compiles, 0 failed with no errors. 
+vsim work.test_cpu(test_cpu_advanced)
+# vsim work.test_cpu(test_cpu_advanced) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -457,184 +56,94 @@ vsim work.test(test_cpu_advanced)
 # Loading ieee.std_logic_unsigned(body)
 # Loading modelsim_lib.util(body)
 # Loading work.micro_assembly
+# Loading work.test_cpu(test_cpu_advanced)
 # Loading ieee.numeric_std(body)
-# Loading work.test(test_cpu_advanced)
 # Loading work.mcu_fsm(mcu)
 # Loading work.datapath(dp)
 # Loading work.register_file(rf)
 # Loading work.alu(behave)
 # Loading work.micro_code(rom)
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
-add wave -position insertpoint  \
-sim:/test/DUT/M \
-sim:/test/DUT/N \
-sim:/test/DUT/CLK \
-sim:/test/DUT/RESET \
-sim:/test/DUT/Data_in \
-sim:/test/DUT/Read_NWrite \
-sim:/test/DUT/Data_out \
-sim:/test/DUT/Address_out \
-sim:/test/DUT/uPC \
-sim:/test/DUT/instruction_reg \
-sim:/test/DUT/Z_N_O_reg \
-sim:/test/DUT/uOP \
-sim:/test/DUT/sel \
-sim:/test/DUT/LE \
-sim:/test/DUT/Z \
-sim:/test/DUT/Neg \
-sim:/test/DUT/O \
-sim:/test/DUT/Z_N_O \
-sim:/test/DUT/OP \
-sim:/test/DUT/DPInput \
-sim:/test/DUT/Bypass \
-sim:/test/DUT/OFFSET \
-sim:/test/DUT/ReadA \
-sim:/test/DUT/ReadB \
-sim:/test/DUT/Write \
-sim:/test/DUT/IE \
-sim:/test/DUT/OE \
-sim:/test/DUT/RA \
-sim:/test/DUT/RB \
-sim:/test/DUT/WAddr \
-sim:/test/DUT/Dout
-restart
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
 # Compile of ALU.vhd was successful.
 # Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful.
 # Compile of Datapath.vhd was successful.
 # Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
 # Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
 # Compile of Register_File.vhd was successful.
 # Compile of test_ALU.vhd was successful.
 # Compile of test_cpu_advanced.vhd was successful.
 # Compile of test_datapath.vhd was successful.
 # Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-restart
-# Loading work.micro_assembly
-# Loading work.test(test_cpu_advanced)
-# Loading work.mcu_fsm(mcu)
-# Loading work.datapath(dp)
-# Loading work.register_file(rf)
-# Loading work.alu(behave)
-# Loading work.micro_code(rom)
+# 14 compiles, 0 failed with no errors. 
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-restart
-# Loading work.micro_assembly
-# Loading work.test(test_cpu_advanced)
-# Loading work.mcu_fsm(mcu)
-# Loading work.datapath(dp)
-# Loading work.register_file(rf)
-# Loading work.alu(behave)
-# Loading work.micro_code(rom)
-run
+#    Time: 0 ps  Iteration: 0  Instance: /test_cpu/DUT/ucode
+# ** Note: init_signal_spy [/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd] : Mirroring the value of '/test_cpu/dut/uPC' onto '/t_upc'.
+# ** Note: init_signal_spy [/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd] : Mirroring the value of '/test_cpu/dut/dp/rf/register_arr' onto '/t_rf_mem'.
+# ** Note: init_signal_spy [/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd] : Mirroring the value of '/test_cpu/dut/Z_reg' onto '/t_z'.
+# ** Note: init_signal_spy [/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd] : Mirroring the value of '/test_cpu/dut/Neg_reg' onto '/t_n'.
+# ** Note: init_signal_spy [/home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd] : Mirroring the value of '/test_cpu/dut/O_reg' onto '/t_o'.
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
-restart
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-restart
-# Loading work.micro_assembly
-# Loading work.test(test_cpu_advanced)
-# Loading work.mcu_fsm(mcu)
-# Loading work.datapath(dp)
-# Loading work.register_file(rf)
-# Loading work.alu(behave)
-# Loading work.micro_code(rom)
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
-# Compile of ALU.vhd was successful.
-# Compile of Clock_Divider.vhd was successful.
-# Compile of Datapath.vhd was successful.
-# Compile of Instruction.vhd was successful.
-# Compile of MCU_FSM.vhd was successful.
-# Compile of Micro_code.vhd was successful with warnings.
-# Compile of Register_File.vhd was successful.
-# Compile of test_ALU.vhd was successful.
-# Compile of test_cpu_advanced.vhd was successful.
-# Compile of test_datapath.vhd was successful.
-# Compile of test_rf.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-restart
-# Loading work.micro_assembly
-# Loading work.test(test_cpu_advanced)
-# Loading work.mcu_fsm(mcu)
-# Loading work.datapath(dp)
-# Loading work.register_file(rf)
-# Loading work.alu(behave)
-# Loading work.micro_code(rom)
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /test/DUT/ucode
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 3 (5 downto 3).
-#    Time: 0 ps  Iteration: 0  Process: /test/DUT/line__111 File: /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd
-# Fatal error in Architecture mcu at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd line 111
-# 
-# HDL call sequence:
-# Stopped at /home/morgan/git/IL2203/Lab3/MCU_FSM.vhd 111 Architecture mcu
-# 
+#    Time: 0 ps  Iteration: 1  Instance: /test_cpu/DUT/ucode
+# ** Note: test_reset OK
+#    Time: 16 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: LDI works OK
+#    Time: 90 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: LDI sign extension works OK
+#    Time: 170 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: ADD works OK
+#    Time: 250 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: SUB works OK
+#    Time: 330 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: ST works OK
+#    Time: 410001 ps  Iteration: 0  Instance: /test_cpu
+# ** Note: NOT works OK
+#    Time: 490 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: OR works OK
+#    Time: 570 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: AND works OK
+#    Time: 650 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: XOR works OK
+#    Time: 730 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: LD works OK
+#    Time: 812 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRZ with Z=0 works OK
+#    Time: 890 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRN with N=0 works OK
+#    Time: 970 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRO with O=0 works OK
+#    Time: 1050 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: XOR Setting Z=1 works
+#    Time: 1130 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRZ with negative offset works OK
+#    Time: 1210 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRZ with posititve offset works OK
+#    Time: 1290 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: XOR Setting N=1 works
+#    Time: 1370 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRN with negative address works OK
+#    Time: 1450 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRN with positive address works OK
+#    Time: 1530 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: ADD setting O=1 works OK
+#    Time: 2250 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRO with negative address works OK
+#    Time: 2330 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRO with positive address works OK
+#    Time: 2410 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRA with negative address works OK
+#    Time: 2490 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: BRA with positive address works OK
+#    Time: 2570 ns  Iteration: 0  Instance: /test_cpu
+# ** Note: CPU passes all tests.
+#    Time: 2590 ns  Iteration: 0  Instance: /test_cpu
+# ** Failure: Ending Simulation.
+#    Time: 2590 ns  Iteration: 0  Process: /test_cpu/test_all_instructions File: /home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd
+# Break in Process test_all_instructions at /home/morgan/git/IL2203/Lab4/test_cpu_advanced.vhd line 224
+# ** Warning: (vish-3116) Problem reading symbols from linux-gate.so.1.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vish-3116) Problem reading symbols from ./vish.
+# No such file or directory. (errno = ENOENT)

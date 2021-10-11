@@ -5,12 +5,4 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	config_reg
 
-} {} {}} /home/morgan/git/IL2203/SV_Lab1/svtb.sv {1 {vlog -work work -sv /home/morgan/git/IL2203/SV_Lab1/svtb.sv
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module config_reg
--- Compiling module svtb
-
-Top level modules:
-	svtb
-
 } {} {}}

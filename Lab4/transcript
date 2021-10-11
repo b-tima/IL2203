@@ -1,0 +1,732 @@
+# reading /home/morgan/altera/13.0sp1/modelsim_ase/linuxaloem/modelsim.ini
+# Loading project Lab4_modelsim
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(76): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(82): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+vsim -L altera_mf work.sim_comp
+# vsim -L altera_mf work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# Loading work.gpio(behave)
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /sim_comp/comp/mcu/ucode
+run
+run
+run
+restart
+# Loading work.sim_comp(sim)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+# Break key hit 
+# Break key hit 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+vsim work.ram
+# vsim work.ram 
+# Loading work.ram
+# Loading work.ram_altsyncram
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(123): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(184): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(245): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(306): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(367): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(428): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(489): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(550): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(611): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(672): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(733): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(794): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(855): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(916): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(977): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# ** Error: (vsim-3033) /home/morgan/git/IL2203/Lab4/ram_syn.v(1038): Instantiation of 'cycloneiv_ram_block' failed. The design unit was not found.
+#         Region: /ram/ram_altsyncram_component
+#         Searched libraries:
+#             /home/morgan/git/IL2203/Lab4/work
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of ALU.vhd.bak was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Computer.vhd.bak was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Datapath.vhd.bak failed with 1 errors.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of Instruction.vhd.bak was successful.
+# Compile of Lab3_modelsim.cr.mti failed with 1 errors.
+# Compile of MCU_FSM.vhd failed with 2 errors.
+# Compile of MCU_FSM.vhd.bak failed with 2 errors.
+# Compile of memory.mif failed with 1 errors.
+# Compile of memory_bit_pattern.vhd failed with 2 errors.
+# Compile of memory_bit_pattern.vhd.bak failed with 2 errors.
+# Compile of Micro_code.vhd failed with 2 errors.
+# Compile of Micro_code.vhd.bak failed with 2 errors.
+# Compile of ram.cmp failed with 1 errors.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of sim_comp.vhd.bak failed with 1 errors.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd failed with 1 errors.
+# Compile of test_cpu_advanced.vhd.bak failed with 1 errors.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of Top_Level_MCU.vhd failed with 1 errors.
+# 31 compiles, 14 failed with 20 errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# ** Error: (vsim-13) Recompile work.micro_assembly because work.micro_assembly has changed.
+# ** Error: (vsim-12) Recompile work.mcu_fsm after work.micro_assembly is recompiled.
+# ** Error: (vsim-12) Recompile work.mcu_fsm(mcu) after work.micro_assembly is recompiled.
+# Load interrupted
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of ALU.vhd.bak was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Computer.vhd.bak was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of Datapath.vhd.bak failed with 1 errors.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of Instruction.vhd.bak was successful.
+# Compile of Lab3_modelsim.cr.mti failed with 1 errors.
+# Compile of MCU_FSM.vhd failed with 2 errors.
+# Compile of MCU_FSM.vhd.bak failed with 2 errors.
+# Compile of memory.mif failed with 1 errors.
+# Compile of memory_bit_pattern.vhd failed with 2 errors.
+# Compile of memory_bit_pattern.vhd.bak failed with 2 errors.
+# Compile of Micro_code.vhd failed with 2 errors.
+# Compile of Micro_code.vhd.bak failed with 2 errors.
+# Compile of ram.cmp failed with 1 errors.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of sim_comp.vhd.bak failed with 1 errors.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd failed with 1 errors.
+# Compile of test_cpu_advanced.vhd.bak failed with 1 errors.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of Top_Level_MCU.vhd failed with 1 errors.
+# 31 compiles, 14 failed with 20 errors. 
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of Lab3_modelsim.cr.mti failed with 1 errors.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of memory.mif failed with 1 errors.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.cmp failed with 1 errors.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of Top_Level_MCU.vhd failed with 1 errors.
+# 22 compiles, 4 failed with 4 errors. 
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of memory.mif failed with 1 errors.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.cmp failed with 1 errors.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# Compile of Top_Level_MCU.vhd failed with 1 errors.
+# 21 compiles, 3 failed with 3 errors. 
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# 18 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Compile of ALU.vhd was successful.
+# Compile of Clock_Divider.vhd was successful.
+# Compile of Computer.vhd was successful with warnings.
+# Compile of Datapath.vhd was successful.
+# Compile of GPIO.vhd was successful.
+# Compile of Instruction.vhd was successful.
+# Compile of MCU_FSM.vhd was successful with warnings.
+# Compile of memory_bit_pattern.vhd was successful.
+# Compile of Micro_code.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of ram.vhd.bak was successful.
+# Compile of ram_syn.v was successful.
+# Compile of Register_File.vhd was successful.
+# Compile of sim_comp.vhd was successful.
+# Compile of test_ALU.vhd was successful.
+# Compile of test_cpu_advanced.vhd was successful.
+# Compile of test_datapath.vhd was successful.
+# Compile of test_rf.vhd was successful.
+# 18 compiles, 0 failed with no errors. 
+vsim work.sim_comp
+# vsim work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+vsim -Lf altera_mf work.sim_comp
+# vsim -Lf altera_mf work.sim_comp 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sim_comp(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.computer(structural)
+# Loading work.micro_assembly
+# Loading work.mcu_fsm(mcu)
+# Loading work.datapath(dp)
+# Loading work.register_file(rf)
+# Loading work.alu(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.micro_code(rom)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) /home/morgan/git/IL2203/Lab4/sim_comp.vhd(78): Instantiation of 'ram' failed.
+#         Region: /sim_comp/comp
+# Loading work.gpio(behave)
+# ** Error: (vsim-3732) /home/morgan/git/IL2203/Lab4/Computer.vhd(84): No default binding for component instance 'gpio_per'.
+#    The following component ports are not on the entity:
+#           q
+#           wren
+#           data
+#           clock
+#           address
+#         Region: /sim_comp/comp/gpio_per
+# Error loading design
+# Break key hit 
